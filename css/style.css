@@ -1,6 +1,5 @@
 body{
-  /*esconder lo q se salga del eje x*/
-  /* overflow-x: hidden; */
+  background: white;
 }
 
 .bg-index{
