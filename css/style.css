@@ -87,15 +87,15 @@ header a:hover {
   max-height: 247px;
 }
 
+#footer{
+  background: #E9ECEF;
+  padding-top: 2em;
+}
+
 #derechos{
   background-color: #d8d8d8;
   padding-top: 1em;
   padding-bottom: 15px;
-}
-
-#footer{
-  background: #eeeeee;
-  padding-top: 2em;
 }
 
 p{
