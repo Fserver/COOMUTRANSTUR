@@ -1,6 +1,4 @@
 $(function() {
-  
-
   //efectos wow.js
   new WOW().init();
 
@@ -37,7 +35,3 @@ $(function() {
   var scroll = ScrollReveal();
   // scroll.reveal('.row',{duration: 3000});
 });
-
-$(window).load(function () {
-    $(".loader").fadeOut("slow");
-  });
