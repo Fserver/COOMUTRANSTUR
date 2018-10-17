@@ -27,7 +27,9 @@ $(function(){
   var scroll = ScrollReveal();
   // scroll.reveal('.row',{duration: 3000});
 
-
+  $(".loader").fadeOut(function(){
+    $("#content").removeClass("invisible").addClass("visible");
+});
 
 
 
