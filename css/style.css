@@ -73,13 +73,19 @@ header a:hover {
 
 #servicios{
   background: rgb(163, 255, 151);
-  min-height: 100vh;
-  /* min-width: 100%; */
+  /* min-height: 100vh; */
 }
 
 #nosotros{
   padding-top: 1em;
   padding-bottom: 15px;
+  min-height: 100vh;
+}
+
+#politica{
+  padding-top: 1em;
+  padding-bottom: 15px;
+  min-height: 100vh;
 }
 
 #logo{
