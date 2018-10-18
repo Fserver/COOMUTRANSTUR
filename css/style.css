@@ -1,17 +1,18 @@
-body{
+body {
   background: white;
 }
-.js div#preloader { 
-  position: fixed; 
-  left: 0; 
-  top: 0; 
-  z-index: 999; 
-  width: 100%; 
-  height: 100%; 
-  overflow: visible; 
-  background: white url(../img/load.gif) no-repeat center center; }
+.js div#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: white url(../img/load.gif) no-repeat center center;
+}
 
-.bg-index{
+.bg-index {
   /* background: url('../img/bg.jpg') no-repeat fixed;
   background-size: cover;
   /*min-height: 650px;
@@ -27,7 +28,7 @@ body{
   /* background-color: rgba(255, 0, 0, 0.5); */
 }
 
-.bg-alainza{
+.bg-alainza {
   min-height: 100vh;
   background-image: url(../img/bg1.jpg);
   background-position: 0%;
@@ -35,17 +36,17 @@ body{
   background-repeat: no-repeat;
 }
 
-.bg-color{
+.bg-color {
   /* min-height: 100%;
   min-width: 100%;*/
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-header{
+header {
   background-color: transparent;
 }
 
-header li{
+header li {
   margin-right: 0.4rem;
 }
 
@@ -68,11 +69,11 @@ header a:hover {
   transition: color 0.5s;
 }
 
-.fas.fa-bars{
+.fas.fa-bars {
   color: white !important;
 }
 
-.flecha-abajo a i{
+.flecha-abajo a i {
   text-align: center;
   position: absolute;
   bottom: 25px;
@@ -80,44 +81,48 @@ header a:hover {
   color: #fff;
 }
 
-#servicios{
+#servicios {
   background: rgb(163, 255, 151);
   /* min-height: 100vh; */
 }
 
-#nosotros{
+#nosotros {
   padding-top: 1em;
   padding-bottom: 15px;
   /* min-height: 100vh; */
 }
 
-#politica{
+#politica {
   padding-top: 1em;
   padding-bottom: 15px;
   /* min-height: 100vh; */
 }
 
-#logo{
+#logo {
   max-width: 350px;
   max-height: 247px;
 }
 
-#footer{
-  background: #E9ECEF;
+#footer {
+  background: #e9ecef;
   padding-top: 2em;
 }
 
-#derechos{
+#derechos {
   background-color: #d8d8d8;
   padding-top: 1em;
   padding-bottom: 15px;
 }
 
-p{
+p {
   margin: 0;
 }
 
-.row{
+.row {
   margin-left: 0 !important;
   margin-right: 0 !important;
+}
+
+.alianza {
+  border: 8px solid #000000;
 }
