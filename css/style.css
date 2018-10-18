@@ -88,13 +88,13 @@ header a:hover {
 #nosotros{
   padding-top: 1em;
   padding-bottom: 15px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 #politica{
   padding-top: 1em;
   padding-bottom: 15px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 #logo{
