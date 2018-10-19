@@ -9,7 +9,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: white url(../img/load.gif) no-repeat center center;
+  background: rgba(255, 255, 255, 0.5) url(../img/load.gif) no-repeat center center;
 }
 
 .bg-index {
