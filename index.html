@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -19,14 +18,20 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 
-</head>
-<div class="js">
+  <!-- Pruebas -->
 
-  <body onmousedown="return false;" onmousedown="return false;" onselectstart="return false;" class="">
+  <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+
+  <!-- Pruebas -->
+
+</head>
+<div class="">
+
+  <body>
     <div id="preloader"></div>
 
     <!-- INDEX -->
-    <section class="container-fluid bg-index wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3">
+    <section class="container-fluid bg-index">
       <div class="bg-color">
         <header>
           <div class="container">
@@ -99,7 +104,7 @@
         <div class="col-sm-12 col-md-5 col-xl-4 text-center">
           <img id="logo" class="card-img-top" src="img/logo.jpg" alt="logo Coomutranstur">
         </div>
-        <div class="col-sm-12 col-md-7 col-xl-8 wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="0s">
+        <div class="col-sm-12 col-md-7 col-xl-8">
           <p>Somos una organización sin ánimo de lucro, de interés social, perteneciente al sector de la economía
             solidaria, ubicado en el Consejo Comunitario de Comunidades Negras del corregimiento de Córdoba y San
             Cipriano de Buenaventura. Brindamos a través de convenios y alianzas estratégicas a los asociados y
@@ -202,10 +207,12 @@
 
       <div id="derechos" class="col text-center">
         <p>
+          <div data-aos="fade-up">Example Element</div>
           COOPERATIVA MULTIATIVA DE TRANSPORTE TURISTICO EN EL
           CORREGIMIENTO DE CORDOBA Y SAN CIPRIANO
         </p>
         <p><em id="nit">NIT: 830.500.789-9</em></p>
+
       </div>
 
     </section>
@@ -216,16 +223,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+    <script src="bower_components/aos/dist/aos.js"></script>
+
+
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/holder.js"></script>
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/app.js"></script>
 
     <script>
+
+
+
       jQuery(document).ready(function ($) {
         // site preloader -- also uncomment the div in the header and the css style for #preloader
         $(window).load(function () {
@@ -236,7 +248,15 @@
       });
     </script>
 
-    <!-- Begin of Chaport Live Chat code --> <script type="text/javascript"> (function(w,d,v3){ w.chaportConfig = { appId : '5babec7cb3796d1c348a5cd1' };  if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document); </script> <!-- End of Chaport Live Chat code -->
+    <script>
+
+      AOS.init();
+
+    </script>
+
+    <!-- Begin of Chaport Live Chat code -->
+    <script type="text/javascript"> (function (w, d, v3) { w.chaportConfig = { appId: '5babec7cb3796d1c348a5cd1' }; if (w.chaport) return; v3 = w.chaport = {}; v3._q = []; v3._l = {}; v3.q = function () { v3._q.push(arguments) }; v3.on = function (e, fn) { if (!v3._l[e]) v3._l[e] = []; v3._l[e].push(fn) }; var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://app.chaport.com/javascripts/insert.js'; var ss = d.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss) })(window, document); </script>
+    <!-- End of Chaport Live Chat code -->
 
   </body>
 </div>
