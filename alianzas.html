@@ -16,6 +16,10 @@
 
   <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
   <link href="css/aos.css" rel="stylesheet">
+
+  <script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+  <script src='https://cdn.rawgit.com/Pagawa/PgwSlideshow/master/pgwslideshow.min.js'></script>
+  <link rel='stylesheet' href='https://cdn.rawgit.com/Pagawa/PgwSlideshow/master/pgwslideshow.min.css'>
   <!-- Pruebas -->
 
 </head>
@@ -56,7 +60,8 @@
     <div class="container-fluid" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 
       <div class="row">
-        <div class="col-sm-12 col-lg-6"> <!-- Div col -->
+        <div class="col-sm-12 col-lg-6">
+          <!-- Div col -->
           <div class="alianza row align-items-center">
             <div class="col-sm-4 text-center">
               <img class="img-fluid" src="holder.js/200x200">
@@ -80,11 +85,15 @@
                 </div>
                 <div class="w-100"></div>
                 <div class="col ">
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                    Ver fotos
+                  </button>
                   <a class="float-right" href="#!">www.facebook.com/elbuengusto</a>
                 </div>
               </div>
             </div>
           </div>
+
         </div> <!-- fin Div col -->
 
         <div class="col-sm-12 col-lg-6">
@@ -122,20 +131,78 @@
 
 
     </div> <!-- fin container fluid -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Restaurante y Hotel El Buen Gusto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <div class="slides">
+              <ul class="pgwSlideshow">
+                <li><img src="http://static.pgwjs.com/img/pg/slideshow/san-francisco.jpg" alt="San Francisco, USA"
+                    data-description="Golden Gate Bridge"></li>
+                <li><img src="http://static.pgwjs.com/img/pg/slideshow/rio.jpg" alt="Rio de Janeiro, Brazil"></li>
+                <li><a href="http://en.wikipedia.org/wiki/Monaco" target="_blank"><img src="http://static.pgwjs.com/img/pg/slideshow/monaco.jpg"
+                      alt="Monaco"></a></li>
+              </ul>
+
+            </div>
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
+  <div class="slides">
+    <ul class="pgwSlideshow">
+      <li><img src="http://s1c.pagawatic.com/img/pgwjs/slideshow/san-francisco.jpg" alt="San Francisco, USA"
+          data-description="Golden Gate Bridge">
+      </li>
+      <li><img src="img/p1.jpg" alt="Rio de Janeiro, Brazil">
+      </li>
+      <li><img src="http://s1c.pagawatic.com/img/pgwjs/slideshow/london_mini.jpg" alt="" data-large-src="http://s1c.pagawatic.com/img/pgwjs/slideshow/london.jpg">
+      </li>
+      <li>
+        <a href="http://en.wikipedia.org/wiki/Monaco" target="_blank"><img src="http://s1c.pagawatic.com/img/pgwjs/slideshow/monaco.jpg"
+            alt="Monaco">
+        </a>
+      </li>
+    </ul>
+  </div>
 
 
 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
   <script src="js/aos.js"></script>
   <script>
     AOS.init();
+
+    $(document).ready(function () {
+      $('.pgwSlideshow').pgwSlideshow({
+        autoSlide: true
+      });
+    });
   </script>
 
+
   <!-- SCRIPTS -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <script src="js/holder.js"></script>
   <!-- <script src="js/scrollreveal.min.js"></script> -->
   <!-- <script src="js/app.js"></script> -->
