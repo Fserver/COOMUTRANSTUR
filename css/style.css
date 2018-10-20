@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=K2D');
+@import url("https://fonts.googleapis.com/css?family=K2D");
 
 body {
   background: white;
-  font-family: 'K2D', sans-serif;
+  font-family: "K2D", sans-serif;
   font-size: 19px;
 }
 .js div#preloader {
@@ -13,7 +13,8 @@ body {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: rgba(255, 255, 255, 0.5) url(../img/load.gif) no-repeat center center;
+  background: rgba(255, 255, 255, 0.5) url(../img/load.gif) no-repeat center
+    center;
 }
 
 .bg-index {
@@ -120,13 +121,17 @@ Alianza       V
 
 .alianza {
   border: 8px solid #000000;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
 }
 
-i{
+i {
   color: black;
 }
 
-.au{
+.au {
   border: solid 2px black;
   border-radius: 10%;
   padding: 1px;
