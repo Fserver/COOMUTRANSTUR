@@ -50,6 +50,11 @@ a:focus {
     SIDEBAR STYLE
 ----------------------------------------------------- */
 
+#sidebarCollapse{
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
+}
+
 #sidebar {
     width: 250px;
     position: fixed;
