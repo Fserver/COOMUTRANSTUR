@@ -154,3 +154,8 @@ i {
 i:hover{
   color: #7AE1F7;
 }
+
+a > img{
+  height: 100px;
+  width: 100px;
+}
