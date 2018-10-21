@@ -66,16 +66,32 @@
         </nav>
 
         <!-- Page Content  -->
-        <div id="content" class="p-0">
+        <div id="content" class="">
             <button type="button" id="sidebarCollapse" class="btn">
                 <i class="fas fa-bars"></i>
                 <span>Indice</span>
             </button>
 
             <div id="container" class="mt-5">
-                <div class="c1" data-anchor="Page 1">
+                <div class="p1 row" data-anchor="Page 1" heigth="700px">
 
-                    <h1 class="display-4 text-center">Nosotros</h1>
+                    <div class="col">
+                        <h1 class="display-4 text-center">Nosotros</h1>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        
+                        <p class="text-justify " style="font-size:14px">
+                            Somos una organización sin ánimo de lucro, de interés social, perteneciente al sector de la
+                            economía solidaria, ubicado en el Consejo Comunitario de Comunidades Negras del corregimiento
+                            de Córdoba y San Cipriano de Buenaventura. Brindamos a través de convenios y alianzas
+                            estratégicas a los asociados y comunidad en general servicios de; recreación, cultura,
+                            gastronomía, turismo ecológico y transporte. Asociando a personas naturales que contribuyen
+                            económicamente a la cooperativa y son aportantes directos de su trabajo. Establecido el decreto
+                            4588 de 2006.
+                        </p>
+
+                    </div>
 
                 </div>
                 <div class="c2" data-anchor="Page 2">
@@ -107,6 +123,8 @@
         </div>
     </div>
 
+
+
     <div class="overlay"></div> <!-- No tocar, es la oscuridad -->
 
 
@@ -121,6 +139,7 @@
 
     <script type="text/javascript">
         new Pageable("#container");
+
         $(document).ready(function () {
             $("#sidebar").mCustomScrollbar({
                 theme: "minimal"
