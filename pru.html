@@ -15,7 +15,7 @@
         }
 
         .c1 {
-            background: gray;
+            background: white;
         }
 
         .c2 {
@@ -35,16 +35,26 @@
             z-index: 9000;
         }
 
-        .anchors li{
+        .anchors li {
             list-style: none;
         }
-        .anchors ul{
-            border-bottom: solid;
-            border-left: solid;
-            border-top: solid;
-            border-radius: 15px;
+        .anchors a{
+            text-decoration: none;
+        }
 
-            padding: 10px;
+        .anchors ul {
+            border-radius: 50px 0px 0px 50px;
+            -moz-border-radius: 50px 0px 0px 50px;
+            -webkit-border-radius: 50px 0px 0px 50px;
+            border: 0px solid #000000;
+
+            background: white;
+
+            padding: 10px 30px;
+
+-webkit-box-shadow: -10px 0px 50px 5px rgba(0,0,0,0.12);
+-moz-box-shadow: -10px 0px 50px 5px rgba(0,0,0,0.12);
+box-shadow: -10px 0px 50px 5px rgba(0,0,0,0.12);
 
         }
     </style>
@@ -54,7 +64,7 @@
 
     <div class="anchors">
         <ul>
-            <li><a href="#Page-1">Pagina 1</a></li>
+            <li><a href="#Page-1">Este es un texto largo</a></li>
             <li><a href="#Page-2">Pagina 2</a></li>
             <li><a href="#Page-3">Pagina 3</a></li>
 
