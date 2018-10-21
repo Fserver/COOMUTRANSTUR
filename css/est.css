@@ -53,6 +53,9 @@ a:focus {
 #sidebarCollapse{
     background: rgba(0, 0, 0, 0);
     position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 2em;
 }
 
 #sidebar {
