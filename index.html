@@ -31,51 +31,52 @@
   <div id="preloader"></div>
 
   <div id="fb-root"></div>
-  <script>(function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.1&appId=642215239509270&autoLogAppEvents=1';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
 
   <!-- INDEX -->
-  <section class="container-fluid bg-index">
-    <div class="bg-color">
-      <header>
-        <div class="container">
-          <nav class="row navbar navbar-expand-lg pb-1">
-            <a class="navbar-brand" href="#">Coomutranstur<br></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-              ria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon">
-                <i class="fas fa-bars"></i>
-              </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#nosotros">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#politica">Política de Calidad</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#ubicacion">Ubicación</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="alianzas.html">Alianzas Estratégicas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#footer">Contáctenos</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
+  <section class="container-fluid  pl-0 pr-0" id="main">
+    <div class="bg-index">
+      <div class="bg-color">
+        <header>
+          <div class="">
+            <!-- menu -->
+            <nav class="row navbar navbar-expand-lg pb-1">
+              <a class="navbar-brand" href="#">Coomutranstur<br></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                ria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                  <i class="fas fa-bars"></i>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#nosotros">Guía turística</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#politica">Política de Calidad</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#ubicacion">Ubicación</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="alianzas.html">Alianzas Estratégicas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contáctenos</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+      </div>
     </div>
-
+    <div class="container">
+      asasdasdasd
+    </div>
     <div class="row justify-content-center">
       <div class="flecha-abajo">
         <a href="#nosotros"><i class="fa fa-angle-down"></i></a>
@@ -148,7 +149,8 @@
         </p>
       </div>
       <hr>
-      <div class="col text-center d-flex align-items-center justify-content-center mt-3" data-aos="flip-right" data-aos-duration="1200">
+      <div class="col text-center d-flex align-items-center justify-content-center mt-3" data-aos="flip-right"
+        data-aos-duration="1200">
         <strong> Valores corporativos:</strong>
         <ul class="list-unstyled">
           <li>Ayuda mutua</li>
@@ -248,23 +250,8 @@
 
   <script src="js/app.js"></script>
 
-  <script>
-    AOS.init();
 
 
-    jQuery(document).ready(function ($) {
-      // site preloader -- also uncomment the div in the header and the css style for #preloader
-      $(window).load(function () {
-        $("#preloader").fadeOut("slow", function () {
-          $(this).remove();
-        });
-      });
-    });
-  </script>
-
-  <!-- Begin of Chaport Live Chat code -->
-  <script type="text/javascript"> (function (w, d, v3) { w.chaportConfig = { appId: '5babec7cb3796d1c348a5cd1' }; if (w.chaport) return; v3 = w.chaport = {}; v3._q = []; v3._l = {}; v3.q = function () { v3._q.push(arguments) }; v3.on = function (e, fn) { if (!v3._l[e]) v3._l[e] = []; v3._l[e].push(fn) }; var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://app.chaport.com/javascripts/insert.js'; var ss = d.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss) })(window, document); </script>
-  <!-- End of Chaport Live Chat code -->
 
 </body>
 </div>

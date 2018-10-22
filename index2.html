@@ -1,158 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Collapsible sidebar using Bootstrap 4</title>
-
-    <!-- Bootstrap CSS CDN -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coomutransport</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/est.css">
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-        crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div id="dismiss">
-                <i class="fas fa-arrow-left"></i>
-            </div>
-
-            <div class="sidebar-header">
-                <h3>INDICE</h3>
-            </div>
-
-            <ul class="list-unstyled components">
-                <p><a href="#Page-1">COOMUTRANSTUR</a></p>
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Nosotros</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#Page-2">Vision</a>
-                        </li>
-                        <li>
-                            <a href="#Page-3">Mision</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#Page-4">POLÍTICA DE CALIDAD</a>
-                </li>
-                <li>
-                    <a href="#Page-5">Ubicacion</a>
-                </li>
-                <li>
-                    <a href="#Page-6">Contacto</a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="#" class="download">Portafolio</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Page Content  -->
-        <div id="content" class="">
-            <button type="button" id="sidebarCollapse" class="btn">
-                <i class="fas fa-bars"></i>
-            </button>
-
-            <div id="container" class="">
-                <div class="p1 row" data-anchor="Page 1">
-                    <div class="col-12">
-                        <h1 class="display-4 text-center">Nosotros</h1>
-                    </div>
-                    <div class="col-12">
-                        <p class="text-justify " style="font-size:14px">
-                            Somos una organización sin ánimo de lucro, de interés social, perteneciente al sector de la
-                            economía solidaria, ubicado en el Consejo Comunitario de Comunidades Negras del corregimiento
-                            de Córdoba y San Cipriano de Buenaventura. Brindamos a través de convenios y alianzas
-                            estratégicas a los asociados y comunidad en general servicios de; recreación, cultura,
-                            gastronomía, turismo ecológico y transporte. Asociando a personas naturales que contribuyen
-                            económicamente a la cooperativa y son aportantes directos de su trabajo. Establecido el decreto
-                            4588 de 2006.
-                        </p>
-                    </div>
-
+    <!-- INDEX -->
+    <section class="container-fluid bg-index">
+        <div class="bg-color">
+            <header>
+                <div class="">
+                    <!-- menu -->
+                    <nav class="row navbar navbar-expand-lg pb-1">
+                        <a class="navbar-brand" href="#">Coomutranstur<br></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                            ria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i class="fas fa-bars"></i>
+                            </span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#politica">Política de Calidad</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#ubicacion">Ubicación</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="alianzas.html">Alianzas Estratégicas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#footer">Contáctenos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-                <div class="c2" data-anchor="Page 2">
+            </header>
+        </div>
 
-                    <h1 class="display-4 text-center">Vision</h1>
-
-                </div>
-                <div class="c3" data-anchor="Page 3">
-
-                    <h1 class="display-4 text-center">Mision</h1>
-
-                </div>
-                <div class="c4" data-anchor="Page 4">
-
-                    <h1 class="display-4 text-center">Politica de calidad</h1>
-
-                </div>
-                <div class="c5" data-anchor="Page 5">
-
-                    <h1 class="display-4 text-center">Ubicacion</h1>
-
-                </div>
-                <div class="c6" data-anchor="Page 6">
-
-                    <h1 class="display-4 text-center">Contacto</h1>
-
-                </div>
+        <div class="row justify-content-center">
+            <div class="flecha-abajo">
+                <a href="#nosotros"><i class="fa fa-angle-down"></i></a>
             </div>
         </div>
-    </div>
-
-
-
-    <div class="overlay"></div> <!-- No tocar, es la oscuridad -->
-
-
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    </section>
+    <!-- FIN INDEX -->
     <script src="js/jquery.min.js"></script>
-    <!-- Popper.JS -->
-    <script src="js/popper.min.js"></script> <!-- Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/pageable.js"></script>
-
-    <script type="text/javascript">
-        new Pageable("#container");
-
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
-
-            $('#dismiss, .overlay').on('click', function () {
-                $('#sidebar').removeClass('active');
-                $('.overlay').removeClass('active');
-            });
-
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').addClass('active');
-                $('.overlay').addClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
