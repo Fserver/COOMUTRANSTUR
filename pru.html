@@ -1,107 +1,332 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Scroll</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <meta property="fb:app_id" content="642215239509270" />
+
+    <title>COOMUSTRANSTUR</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Pruebas -->
+
+    <link rel="stylesheet" href="css/aos.css">
 
     <style>
-        body {
-            /* margin: 0; */
+        #mapa{
+            filter: brightness(0.6);
+            transition-duration: .6s;
+            
         }
-
-        .c1 {
-            background: white;
-        }
-
-        .c2 {
-            background: blue;
-        }
-
-        .c3 {
-            background: green;
-        }
-
-        .anchors {
-            height: 100%;
-            position: fixed;
-            right: 0;
-            align-items: center;
-            display: flex;
-            z-index: 9000;
-        }
-
-        .anchors li {
-            list-style: none;
-        }
-
-        .anchors a {
-            text-decoration: none;
-        }
-
-        .anchors ul {
-            border-radius: 50px 0px 0px 50px;
-            -moz-border-radius: 50px 0px 0px 50px;
-            -webkit-border-radius: 50px 0px 0px 50px;
-            border: 0px solid #000000;
-
-            background: white;
-
-            padding: 10px 30px;
-
-            -webkit-box-shadow: -10px 0px 50px 5px rgba(0, 0, 0, 0.12);
-            -moz-box-shadow: -10px 0px 50px 5px rgba(0, 0, 0, 0.12);
-            box-shadow: -10px 0px 50px 5px rgba(0, 0, 0, 0.12);
-
+        #mapa:hover{
+            transition-duration: .6s;
+            filter: brightness(1);
         }
     </style>
+
+    <!-- Pruebas -->
+
 </head>
+<!-- <div class="js"> -->
 
 <body>
+    <div id="preloader"></div>
 
-    <div class="anchors">
-        <ul>
-            <li><a href="#Page-1">Pagina 1</a></li>
-            <li><a href="#Page-2">Pagina 2</a></li>
-            <li><a href="#Page-3">Pagina 3</a></li>
+    <div id="fb-root"></div>
 
-        </ul>
+    <!-- INDEX -->
+    <section class="container-fluid pl-0 pr-0" id="main">
+        <div class="bg-index">
+            <div class="bg-color">
+                <header>
+                    <div class="">
+                        <!-- menu -->
+                        <nav class="row navbar navbar-expand-lg pb-1">
+                            <a class="navbar-brand" href="#">Coomutranstur<br></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                                ria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <i class="fas fa-bars"></i>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#nosotros">Guía turística</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#politica">Política de Calidad</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#ubicacion">Ubicación</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="alianzas.html">Alianzas Estratégicas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#footer">Contáctenos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+                <!-- texto main -->
+                <div class="jumbotron jumbotron-fluid bg-transparent">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-md-6 col-xl-6 text-center">
+                                <!-- <p class="lead text-white">COOMOTRANSTUR</p>
+                <p class="display-4 text-white">Empresa líder en el turismo a sancipriano</p> -->
+                                <p class="lead text-white text-center">COOMOTRANSTUR</p>
+                                <p class="display-4 text-white text-center">Empresa líder en el turismo a sancipriano</p>
+                                <button class="btn btn-primary btn-lg mt-5">Contáctanos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin texto main -->
+            </div>
+        </div>
+
+
+
+        <div class="row justify-content-center">
+            <div class="flecha-abajo">
+                <a href="#nosotros"><i class="fa fa-angle-down"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- FIN INDEX -->
+
+
+    <!-- Acerca de  -->
+    <section class="container" id="nosotros">
+        <div class="row pb-3 pt-3 text-center bg-light">
+            <div class="col-12" data-aos="zoom-in">
+                <h3>NOSOTROS</h3>
+            </div>
+        </div>
+        <div class="row mt-4 align-items-center">
+            <div class="col-sm-12 col-md-3 col-xl-4 text-center" data-aos="zoom-in-right">
+                <img class="img-fluid" src="img/logo.jpg" alt="logo Coomutranstur">
+            </div>
+            <div class="col-sm-12 col-md-9 col-xl-8" data-aos="fade-left" data-aos-delay="500">
+                <p class="text-justify">Somos una organización sin ánimo de lucro, de interés social, perteneciente al
+                    sector
+                    de la economía
+                    solidaria, ubicado en el Consejo Comunitario de Comunidades Negras del corregimiento de Córdoba y
+                    San
+                    Cipriano de Buenaventura. Brindamos a través de convenios y alianzas estratégicas a los asociados y
+                    comunidad
+                    en general servicios de; recreación, cultura, gastronomía, turismo ecológico y transporte.
+                    Asociando a
+                    personas naturales que contribuyen económicamente a la cooperativa y son aportantes directos de su
+                    trabajo.
+                    Establecido el decreto 4588 de 2006.</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row mt-4">
+            <div class="col" data-aos="fade-right">
+                <h3 class="display-4 text-center">Visión</h3>
+                <p class="text-justify">
+                    La Cooperativa <em></em>"<strong>COOMUTRANSTUR</strong>"</em> se consolidará como una empresa del
+                    sector de
+                    economía
+                    solidaria, que provea a
+                    los asociados y a sus familias desarrollo integral, al fortalecimiento del sector cooperativo y a
+                    la
+                    construcción del capital social en Colombia.
+                </p>
+            </div>
+            <div class="col" data-aos="fade-left">
+                <h3 class="display-4 text-center">Misión</h3>
+                <p class="text-justify">
+                    Contribuir al crecimiento económico, social, educativo y cultural de los asociados y sus familias
+                    promoviendo
+                    el ahorro con base en el aporte, otorgando créditos, fomentando la ayuda mutua, el compañerismo y
+                    el
+                    mejoramiento de la calidad de vida a través del empleo decente.
+                </p>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <section class="container" id="politica">
+        <div class="row pb-3 pt-3 align-items-center bg-light">
+            <div class="col-12 text-center" data-aos="zoom-in">
+                <h3>POLÍTICA DE CALIDAD</h3>
+            </div>
+        </div>
+        <div class="row justify-content-around mt-4">
+            <div class="col d-flex align-items-center" data-aos="flip-left" data-aos-duration="1200">
+                <p class="text-justify">Estamos mejorando continuamente nuestros servicios para satisfacer las
+                    necesidades y
+                    expectativas
+                    de
+                    nuestros asociados, sus familias y demás grupos de interés, generando creación de valor sostenible.
+                </p>
+            </div>
+            <hr>
+            <div class="col text-center d-flex align-items-center justify-content-center mt-3" data-aos="flip-right"
+                data-aos-duration="1200">
+                <strong> Valores corporativos:</strong>
+                <ul class="list-unstyled">
+                    <li>Ayuda mutua</li>
+                    <li>Responsabilidad</li>
+                    <li>Honestidad </li>
+                    <li>Democracia</li>
+                    <li>Equidad </li>
+                    <li>Solidaridad </li>
+                    <li>Honestidad y transparencia</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicacion  -->
+    <div class="container">
+        <div class="row pb-3 pt-3 align-items-center bg-light">
+            <div class="col-12 text-center" data-aos="zoom-in">
+                <h3>Contacto</h3>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid pl-0 pr-0 mb-5 mt-4">
+        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.692860584939!2d-76.93038208467371!3d3.875888349334545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e373bfac0c11d7d%3A0xa41564121f3506cb!2sCooperativa+Multiactiva+de+Transportadores+Turisticos+de+Cordoba+y+San+Cipriano+-+COOMUTRANSTUR!5e0!3m2!1ses-419!2sco!4v1540246532405"
+            width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <i class="fas fa-phone-square fa-2x align-self-center mr-1"></i>
+                    </div>
+                    <div class="col">
+                        (57) 3148340811 <br>
+                        (57) 3148302152 <br>
+                        (57) 3155777327 <br>
+                        <span><small>Lunes a viernes de 8am-6pm</small></span>
+                    </div>
+
+                    <div class="w-100"></div>
+                    <div class="col-md-2">
+                        <i class="fas fa-envelope fa-2x align-self-center mr-1"></i>
+                    </div>
+                    <div class="col">
+                        www.coomutranstur@hotmail.com
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-lg-8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well well-sm">
+                            <form class="form-horizontal" method="post">
+                                <fieldset>
+                                    <legend class="text-center header">¿Tiene una pregunta?</legend>
+
+                                    <div class="form-group">
+                                        <input required id="fname" name="name" type="text" placeholder="Nombre completo" class="form-control">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input required id="email" name="email" type="text" placeholder="Correo electrónico"
+                                            class="form-control">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <textarea required class="form-control" id="message" name="message" placeholder="Introduzca su mensaje para nosotros, le responderemos via email lo más pronto posible."
+                                            rows="7"></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="container">
-        <div id="i1" class="c1" data-anchor="Page 1">
+    <!-- Footer  -->
+    <section id="footer" class="mt-4">
+        <div class="container justify-content-around text-center mb-4">
+            <div class="row">
 
-            <h1 class="display-1">titulo 1</h1>
+                <!-- <div class="w-100"></div> -->
+                <div class="col-sm-6 col-md-12 col-lg-4">
+                    <span style="font-size: 3em;">
+                        <a href="https://www.facebook.com/coomutranstur/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/coomutranstur/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/coomutranstur" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    </span>
+                </div>
+            </div>
         </div>
-        <div class="c2" data-anchor="Page 2">
-            <h1 class="display-1">titulo 2</h1>
+
+        <div id="derechos" class="col text-center">
+            <p>
+                COOPERATIVA MULTIATIVA DE TRANSPORTE TURISTICO EN EL
+                CORREGIMIENTO DE CORDOBA Y SAN CIPRIANO
+            </p>
+            <p><em>NIT: 830.500.789-9</em></p>
 
         </div>
-        <div class="c3" data-anchor="Page 3">
-            <h1 class="display-1">titulo 3</h1>
 
-        </div>
-    </div>
+    </section>
 
 
-
-
-
-
-
+    <!-- SCRIPTS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
 
 
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/pageable.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/aos.js"></script>
 
-    <script>
-        new Pageable("#container");
-    </script>
+    <script src="js/app.js"></script>
+
+
+
+
 </body>
+</div>
 
 </html>
