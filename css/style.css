@@ -20,9 +20,43 @@ body {
     center;
 }
 
+/* NAVBAR */
+
+
+header li {
+  margin-right: 0.4rem;
+}
+
+header a {
+  color: #fff;
+  font-size: 1.1em;
+}
+
+header a:hover{
+  color: rgba(255, 236, 2, 1);
+}
+
+header .navbar-brand {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+header .bg-nav-menu{
+  background-color:rgba(11, 101, 14, 0.5);
+}
+
+
+.title{
+  color: rgba(0, 147, 63, 1);
+}
+
+/* FIN NAVBAR */
+
 /* tamaño del main */
 #main{
   height: 100vh;
+  /* clip-path: polygon(50% 0%, 100% 0, 100% 65%, 75% 100%, 0 100%, 0 0); */
+  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 85% 100%, 0 100%, 0 0);
 }
 
 .bg-index {
@@ -37,6 +71,32 @@ body {
 .bg-color {
   background-color: rgba(0, 0, 0, 0.3);
   height: 100vh;
+}
+
+.overlay { 
+    color:#fff;
+    position:absolute;
+    z-index:12;
+    top:50%;
+    left:0;
+    width:100%;
+    text-align:center;
+}
+
+.sancipriano{
+  text-transform: uppercase;
+}
+
+.logo-index{
+  height: 20% !important;
+}
+
+.btn-contacto{
+  background-color: rgba(0, 147, 63, 1) !important;
+  color: #fff;
+}
+.btn-contacto:hover{
+  background-color:rgba(85, 203, 117, 1) !important;
 }
 
 
@@ -59,32 +119,7 @@ body {
 
 
 
-header {
-  background-color: transparent;
-}
 
-header li {
-  margin-right: 0.4rem;
-}
-
-header .navbar-brand {
-  font-size: 2rem;
-}
-
-header .navbar-brand:hover {
-  margin-left: 20px;
-  transition: margin-left 0.5s;
-}
-
-header a {
-  color: #fff;
-  font-size: 1rem;
-}
-
-header a:hover {
-  color: #e8e8e8;
-  transition: color 0.5s;
-}
 
 .fas.fa-bars {
   color: white !important;
