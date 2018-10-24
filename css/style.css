@@ -144,6 +144,16 @@ header .bg-nav-menu{
   /* min-height: 100vh; */
 }
 
+#mapa{
+  filter: brightness(0.6);
+  transition-duration: .6s;
+  
+}
+#mapa:hover{
+  transition-duration: .6s;
+  filter: brightness(1);
+}
+
 #footer {
   background-color: #628C04;
   padding-top: 1em;
