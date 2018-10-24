@@ -155,9 +155,14 @@ header .bg-nav-menu{
 }
 
 #footer {
-  background-color: #628C04;
+  background-color: #315700;
+  color: white;
   padding-top: 1em;
   padding-bottom: 15px;
+}
+
+#footer p{
+  font-size: 17px;
 }
 
 p {
