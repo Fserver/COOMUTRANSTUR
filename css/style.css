@@ -37,6 +37,7 @@ header a {
 
 header a:hover{
   color: rgba(255, 236, 2, 1);
+  transition-duration: .3s;
 }
 
 header .navbar-brand {
