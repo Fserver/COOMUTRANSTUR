@@ -6,6 +6,10 @@ body {
   /* background: white; */
   font-family: "K2D", sans-serif;
 }
+.title{
+  color: rgba(0, 147, 63, 1);
+  font-size: 3rem !important;
+}
 
 .js div#preloader {
   position: fixed;
@@ -42,12 +46,6 @@ header .navbar-brand {
 
 header .bg-nav-menu{
   background-color:rgba(11, 101, 14, 0.5);
-}
-
-
-.title{
-  color: rgba(0, 147, 63, 1);
-  font-size: 3rem !important;
 }
 
 /* FIN NAVBAR */
