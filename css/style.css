@@ -5,7 +5,6 @@
 body {
   /* background: white; */
   font-family: "K2D", sans-serif;
-  /* font-size: 19px; */
 }
 
 .js div#preloader {
@@ -48,6 +47,7 @@ header .bg-nav-menu{
 
 .title{
   color: rgba(0, 147, 63, 1);
+  font-size: 3rem !important;
 }
 
 /* FIN NAVBAR */
@@ -159,10 +159,6 @@ header .bg-nav-menu{
   color: white;
   padding-top: 1em;
   padding-bottom: 15px;
-}
-
-#footer p{
-  font-size: 17px;
 }
 
 p {
