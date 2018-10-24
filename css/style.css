@@ -9,10 +9,10 @@ body {
 p {
   margin: 0;
 }
-i{
+i {
   color: #00933f;
 }
-.title{
+.title {
   color: rgba(0, 147, 63, 1);
   font-size: 3rem !important;
 }
@@ -31,7 +31,6 @@ i{
 
 /* NAVBAR */
 
-
 header li {
   margin-right: 0.4rem;
 }
@@ -41,9 +40,9 @@ header a {
   font-size: 1.1em;
 }
 
-header a:hover{
+header a:hover {
   color: rgba(255, 236, 2, 1);
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 header .navbar-brand {
@@ -51,14 +50,14 @@ header .navbar-brand {
   text-transform: uppercase;
 }
 
-header .bg-nav-menu{
-  background-color:rgba(11, 101, 14, 0.5);
+header .bg-nav-menu {
+  background-color: rgba(11, 101, 14, 0.5);
 }
 
 /* FIN NAVBAR */
 
 /* tamaño del main */
-#main{
+#main {
   height: 100vh;
   /* clip-path: polygon(50% 0%, 100% 0, 100% 65%, 75% 100%, 0 100%, 0 0); */
   clip-path: polygon(50% 0%, 100% 0, 100% 75%, 85% 100%, 0 100%, 0 0);
@@ -78,32 +77,31 @@ header .bg-nav-menu{
   height: 100vh;
 }
 
-.overlay { 
-    color:#fff;
-    position:absolute;
-    z-index:12;
-    top:50%;
-    left:0;
-    width:100%;
-    text-align:center;
+.overlay {
+  color: #fff;
+  position: absolute;
+  z-index: 12;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
-.sancipriano{
+.sancipriano {
   text-transform: uppercase;
 }
 
-.logo-index{
+.logo-index {
   height: 20% !important;
 }
 
-.btn-contacto{
+.btn-contacto {
   background-color: rgba(0, 147, 63, 1) !important;
   color: #fff;
 }
-.btn-contacto:hover{
-  background-color:rgba(85, 203, 117, 1) !important;
+.btn-contacto:hover {
+  background-color: rgba(85, 203, 117, 1) !important;
 }
-
 
 .flecha-abajo a i {
   text-align: center;
@@ -113,7 +111,6 @@ header .bg-nav-menu{
   color: #fff;
 }
 
-
 .bg-alainza {
   min-height: 50vh;
   background-image: url(../img/bg1.jpg);
@@ -122,15 +119,9 @@ header .bg-nav-menu{
   background-repeat: no-repeat;
 }
 
-
-
-
-
 .fas.fa-bars {
   color: white !important;
 }
-
-
 
 #servicios {
   background: rgb(163, 255, 151);
@@ -149,13 +140,12 @@ header .bg-nav-menu{
   /* min-height: 100vh; */
 }
 
-#mapa{
+#mapa {
   filter: brightness(0.6);
-  transition-duration: .6s;
-  
+  transition-duration: 0.6s;
 }
-#mapa:hover{
-  transition-duration: .6s;
+#mapa:hover {
+  transition-duration: 0.6s;
   filter: brightness(1);
 }
 
@@ -166,11 +156,24 @@ header .bg-nav-menu{
   padding-bottom: 15px;
 }
 
-
-
 .row {
   margin-left: 0 !important;
   margin-right: 0 !important;
+}
+
+.tarjeta {
+  -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+
+  padding: 1em .3em;
+
+  margin-bottom: 1em;
 }
 
 /* 
@@ -197,9 +200,9 @@ Alianza       V
   color: #54ff004f;
 }
 
-#footer i:hover{
+#footer i:hover {
   color: white;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .au {
@@ -212,11 +215,10 @@ Alianza       V
   justify-content: center;
 }
 
-.au:hover{
+.au:hover {
   border: solid 2px rgb(78, 142, 156);
 }
 
-
-section > a > img{
+section > a > img {
   width: 90px;
 }
