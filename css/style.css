@@ -6,6 +6,12 @@ body {
   /* background: white; */
   font-family: "K2D", sans-serif;
 }
+p {
+  margin: 0;
+}
+i{
+  color: #00933f;
+}
 .title{
   color: rgba(0, 147, 63, 1);
   font-size: 3rem !important;
@@ -160,9 +166,7 @@ header .bg-nav-menu{
   padding-bottom: 15px;
 }
 
-p {
-  margin: 0;
-}
+
 
 .row {
   margin-left: 0 !important;
@@ -189,8 +193,13 @@ Alianza       V
   margin-bottom: 1em;
 }
 
-i {
-  color: black;
+#footer i {
+  color: #54ff004f;
+}
+
+#footer i:hover{
+  color: white;
+  transition-duration: .3s;
 }
 
 .au {
@@ -207,10 +216,6 @@ i {
   border: solid 2px rgb(78, 142, 156);
 }
 
-i:hover{
-  color: #D8E6B5;
-  transition-duration: .3s;
-}
 
 section > a > img{
   width: 90px;
