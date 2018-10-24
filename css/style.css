@@ -208,7 +208,8 @@ i {
 }
 
 i:hover{
-  color: #7AE1F7;
+  color: #D8E6B5;
+  transition-duration: .3s;
 }
 
 section > a > img{
