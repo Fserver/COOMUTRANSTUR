@@ -205,6 +205,9 @@ Alianza       V
   -moz-border-radius: 200px 200px 200px 200px;
   -webkit-border-radius: 200px 200px 200px 200px;
   border: 0px solid #000000;
+
+  font-weight: 600;
+
 }
 
 #footer i {
