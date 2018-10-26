@@ -4,6 +4,8 @@
 
 @import url("../css/bootstrap.min.css");
 
+@import url("../css/normalize.css");
+
 body {
   /* background: white; */
   font-family: "K2D", sans-serif;
@@ -185,9 +187,16 @@ Alianza       V
 */
 
 .alianza {
-  border: 0.5px solid #8b8b8b;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
 
-  margin-top: 1em;
+  border: 0.5px solid #ccc;
+
+  margin-top: 3em;
   margin-bottom: 1em;
 }
 .cabecita {
@@ -195,7 +204,7 @@ Alianza       V
   height: 70px;
   position: relative;
   top: -35px;
-  border: solid black;
+  border: 1px solid black;
 }
 .botoncito {
   position: relative;
@@ -207,7 +216,9 @@ Alianza       V
   border: 0px solid #000000;
 
   font-weight: 600;
-
+}
+.botoncito:hover{
+  color: rgba(255, 236, 2, 1);
 }
 
 #footer i {
