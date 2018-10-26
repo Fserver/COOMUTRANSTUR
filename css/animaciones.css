@@ -1,6 +1,14 @@
-.cabecita:hover {
+.alianza:hover .cabecita {
   -webkit-animation: animation 1000ms linear infinite both;
   animation: animation 1000ms linear infinite both;
+}
+
+.alianza:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 147, 63, 1);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 147, 63, 1);
+  box-shadow: 0px 0px 20px 0px rgba(0, 147, 63, 1);
+
+  transition-duration: .3s;
 }
 
 /* Generated with Bounce.js. Edit at https://goo.gl/dO5g0N */
