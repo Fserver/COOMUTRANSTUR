@@ -9,7 +9,6 @@ $(function() {
   }(document, 'script', 'facebook-jssdk'));
 
 
-  AOS.init();
 
 
   jQuery(document).ready(function ($) {
@@ -59,4 +58,5 @@ $(function() {
 
   var scroll = ScrollReveal();
   // scroll.reveal('.row',{duration: 3000});
+
 });
