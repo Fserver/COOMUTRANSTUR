@@ -4,9 +4,11 @@
 }
 
 .alianza:hover {
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 147, 63, 1);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 147, 63, 1);
-  box-shadow: 0px 0px 20px 0px rgba(0, 147, 63, 1);
+  -webkit-box-shadow: 0px 0px 20px 0px yellow;
+  -moz-box-shadow: 0px 0px 20px 0px yellow;
+  box-shadow: 0px 0px 20px 0px yellow;
+
+  background-color: rgba(132, 255, 138, 0.678);
 
   transition-duration: .3s;
 }
