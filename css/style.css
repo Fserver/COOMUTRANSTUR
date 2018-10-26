@@ -64,7 +64,11 @@ header .bg-nav-menu {
 #main {
   height: 100vh;
   /* clip-path: polygon(50% 0%, 100% 0, 100% 65%, 75% 100%, 0 100%, 0 0); */
-  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 85% 100%, 0 100%, 0 0);
+}
+@media (min-width: 768px) {
+  #main {
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 85% 100%, 0 100%, 0 0);
+  }
 }
 
 .bg-index {
@@ -217,7 +221,7 @@ Alianza       V
 
   font-weight: 600;
 }
-.botoncito:hover{
+.botoncito:hover {
   color: rgba(255, 236, 2, 1);
 }
 
