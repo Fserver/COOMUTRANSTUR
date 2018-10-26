@@ -173,7 +173,7 @@ header .bg-nav-menu {
   -webkit-border-radius: 10px 10px 10px 10px;
   border: 0px solid #000000;
 
-  padding: 1em .3em;
+  padding: 1em 0.3em;
 
   margin-bottom: 1em;
 }
@@ -185,17 +185,26 @@ Alianza       V
 */
 
 .alianza {
-  border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  border: 0px solid #000000;
-
-  -webkit-box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.4);
+  border: 0.5px solid #8b8b8b;
 
   margin-top: 1em;
   margin-bottom: 1em;
+}
+.cabecita {
+  width: 100px;
+  height: 70px;
+  position: relative;
+  top: -35px;
+  border: solid black;
+}
+.botoncito {
+  position: relative;
+  bottom: -16px;
+
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
 }
 
 #footer i {
@@ -224,4 +233,3 @@ Alianza       V
 section > a > img {
   width: 90px;
 }
-
