@@ -22,12 +22,6 @@ i {
   color: rgba(0, 147, 63, 1);
   font-size: 3rem !important;
 }
-.p2{
- font-size: 1.3vw;
-}
-.p3{
-  font-size: 3em;
- }
 
 .js div#preloader {
   position: fixed;
@@ -272,11 +266,16 @@ section > a > img {
   -webkit-clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
 
+  position: relative;
 
-
-
+  z-index: 0;
 }
 
 #img-control{
-  max-width: 350px;
+
+  /* padding: 0px; */
+}
+.super{
+  position: absolute;
+  z-index: 900000000;
 }
