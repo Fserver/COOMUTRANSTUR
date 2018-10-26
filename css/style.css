@@ -22,6 +22,12 @@ i {
   color: rgba(0, 147, 63, 1);
   font-size: 3rem !important;
 }
+.p2{
+ font-size: 1.3vw;
+}
+.p3{
+  font-size: 3em;
+ }
 
 .js div#preloader {
   position: fixed;
@@ -32,7 +38,7 @@ i {
   height: 100%;
   overflow: visible;
   background: rgba(255, 255, 255, 0.5) url(../img/load.gif) no-repeat center
-    center;
+    center fixed;
 }
 
 /* NAVBAR */
@@ -139,7 +145,6 @@ header .bg-nav-menu {
 }
 
 #nosotros {
-  padding-top: 1em;
   padding-bottom: 15px;
   /* min-height: 100vh; */
 }
@@ -201,7 +206,7 @@ Alianza       V
   -webkit-border-radius: 5px 5px 5px 5px;
 
   border: 0.5px solid #ccc;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 
   margin-top: 3em;
   margin-bottom: 1em;
@@ -240,19 +245,38 @@ Alianza       V
 }
 
 .au {
-  border: solid 2px black;
+  border: solid 2px rgba(0, 255, 34, 0.856);
+  background-color: #ffffff;
   border-radius: 10%;
-  padding: 1px;
+  padding-top: 4px;
   height: 44px;
   width: 44px;
   display: inline-flex;
   justify-content: center;
+  transition-duration: 0.4s;
 }
 
 .au:hover {
-  border: solid 2px rgb(78, 142, 156);
+  background-color: rgb(255, 255, 124);
+  transition-duration: 0.4s;
 }
 
 section > a > img {
   width: 90px;
+}
+
+.plash {
+  background-color: #45FE00;
+  height: 50vh;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
+
+
+
+
+}
+
+#img-control{
+  max-width: 350px;
 }
