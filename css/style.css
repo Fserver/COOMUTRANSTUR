@@ -22,6 +22,10 @@ i {
   color: rgba(0, 147, 63, 1);
   font-size: 3rem !important;
 }
+.title2 {
+  color: rgba(0, 147, 63, 1);
+  font-size: 1rem !important;
+}
 
 .js div#preloader {
   position: fixed;
