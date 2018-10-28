@@ -188,14 +188,17 @@ header .bg-nav-menu {
   border-radius: 15px 15px 15px 15px;
   -moz-border-radius: 15px 15px 15px 15px;
   -webkit-border-radius: 15px 15px 15px 15px;
-  border: 0px solid #000000;
+  border: 3px solid #adadad;
+  
+  margin: 0.5em;
 }
 .tarjeta2:hover {
   -webkit-box-shadow: 0px 0px 52px -14px rgba(0, 238, 255, 1);
   -moz-box-shadow: 0px 0px 52px -14px rgba(0, 238, 255, 1);
   box-shadow: 0px 0px 52px -14px rgba(0, 238, 255, 1);
+  border: 3px solid #cccccc28;
 
-  transition-duration: 0.5s;
+  transition-duration: 0.7s;
 }
 
 /* 
