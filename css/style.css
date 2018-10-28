@@ -65,12 +65,7 @@ header .bg-nav-menu {
 /* tamaño del main */
 #main {
   height: 100vh;
-  /* clip-path: polygon(50% 0%, 100% 0, 100% 65%, 75% 100%, 0 100%, 0 0); */
-}
-@media (min-width: 768px) {
-  #main {
-    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 85% 100%, 0 100%, 0 0);
-  }
+  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 85% 100%, 0 100%, 0 0);
 }
 
 .bg-index {
@@ -260,7 +255,7 @@ section > a > img {
 }
 
 .plash {
-  background-color: #45FE00;
+  background-color: #45fe00;
   height: 50vh;
 
   -webkit-clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
@@ -271,11 +266,7 @@ section > a > img {
   z-index: 0;
 }
 
-#img-control{
-
-  /* padding: 0px; */
-}
-.super{
+.super {
   position: absolute;
   z-index: 900000000;
 }
