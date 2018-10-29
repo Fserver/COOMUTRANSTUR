@@ -189,8 +189,10 @@ header .bg-nav-menu {
   -moz-border-radius: 15px 15px 15px 15px;
   -webkit-border-radius: 15px 15px 15px 15px;
   border: 3px solid #adadad;
+  background-color: #ff0000;
   
   margin: 0.5em;
+  transition-duration: .3s;
 }
 .tarjeta2:hover {
   -webkit-box-shadow: 0px 0px 52px -14px rgba(0, 238, 255, 1);
@@ -198,7 +200,13 @@ header .bg-nav-menu {
   box-shadow: 0px 0px 52px -14px rgba(0, 238, 255, 1);
   border: 3px solid #cccccc28;
 
-  transition-duration: 0.7s;
+  background-color: #006eff;
+
+  transition-duration: .3s;
+}
+
+.carousel-inner img{
+  max-height: 460px;
 }
 
 /* 
