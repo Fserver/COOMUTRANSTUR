@@ -11,6 +11,7 @@
 body {
   /* background: white; */
   font-family: "K2D", sans-serif;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
 }
 p {
   margin: 0;
@@ -179,6 +180,8 @@ header .bg-nav-menu {
   -webkit-border-radius: 10px 10px 10px 10px;
   border: 0px solid #000000;
 
+  background-color: white;
+
   padding: 1em 0.3em;
 
   margin-bottom: 1em;
@@ -339,4 +342,8 @@ section > a > img {
   background-size: auto 150vh;
   background-position: center center;
   height: 30vh;
+}
+
+#noticias {
+
 }
