@@ -309,19 +309,12 @@ section > a > img {
 
 .plash {
   background-color: #45fe00;
-  height: 50vh;
+  max-height: 600px;
 
   -webkit-clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
 
-  position: relative;
-
   z-index: 0;
-}
-
-.super {
-  position: absolute;
-  z-index: 900000000;
 }
 
 #biodiversidad{
