@@ -299,3 +299,9 @@ section > a > img {
   position: absolute;
   z-index: 900000000;
 }
+
+#biodiversidad{
+  margin-top: 3em;
+  background-color: #212020;
+  height: 100vh;
+}
