@@ -215,6 +215,8 @@ header .bg-nav-menu {
   
   margin: 0.5em;
   transition-duration: .3s;
+
+  position: relative;
 }
 .tarjeta3 img {
   margin: 1em 0;
