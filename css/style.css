@@ -76,7 +76,7 @@ header .bg-nav-menu {
   min-height: 100%;
   min-width: 100%;
   background-image: url(../img/fondo.jpg);
-  background-position: 0%;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -216,12 +216,11 @@ header .bg-nav-menu {
   margin: 0.5em;
   transition-duration: .3s;
 }
-
-.contenido-tarjeta3{
-  position: relative;
-
-  display: flex;
-  justify-content: center;
+.tarjeta3 img {
+  margin: 1em 0;
+}
+.tarjeta3 p {
+  margin-bottom: 1em; 
 }
 
 .carousel-inner img{
@@ -321,12 +320,21 @@ section > a > img {
 #biodiversidad{
   margin-top: 5em;
   background-color: #212020;
-  height: 93vh;
+  padding-bottom: 2em;
+  position: relative;
+  padding-top: 5em;
 }
 
 .cabecita2 {
   height: 200px;
   width: auto;
-  position: relative;
+  position: absolute;
   top: -90px;
+}
+
+#parallax1 {
+  background-image: url(../img/gastronomia.jpg);
+  background-size: auto 150vh;
+  background-position: center center;
+  height: 30vh;
 }
