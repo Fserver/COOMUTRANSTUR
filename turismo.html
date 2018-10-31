@@ -11,6 +11,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+<style>
+    img.lazy {
+        width: 700px; 
+        height: 467px; 
+        display: block;
+
+        background-image: url("../img/load.gif");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+</style>
+
 <body>
     <!-- INDEX -->
     <section class="container-fluid pl-0 pr-0" id="">
@@ -80,21 +92,13 @@
 
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
-    <script type="text/javascript" src="js/jquery.lazy.plugins.min.js"></script>
 
     <script>
-        $('.lazy').Lazy({
-        // your configuration goes here
-        scrollDirection: 'vertical',
-        effect: 'fadeIn',
-        visibleOnly: true,
-        onError: function(element) {
-            console.log('error loading ' + element.data('src'));
-        }
-    });
+        
     </script>
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/carga.js"></script>
 </body>
 
 </html>

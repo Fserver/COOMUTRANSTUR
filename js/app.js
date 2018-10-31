@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
   (function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -20,11 +20,11 @@ $(function() {
     });
   });
 
-  (function (w, d, v3) { w.chaportConfig = { appId: '5babec7cb3796d1c348a5cd1' }; if (w.chaport) return; v3 = w.chaport = {}; v3._q = []; v3._l = {}; v3.q = function () { v3._q.push(arguments) }; v3.on = function (e, fn) { if (!v3._l[e]) v3._l[e] = []; v3._l[e].push(fn) }; var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://app.chaport.com/javascripts/insert.js'; var ss = d.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss) })(window, document); 
+  (function (w, d, v3) { w.chaportConfig = { appId: '5babec7cb3796d1c348a5cd1' }; if (w.chaport) return; v3 = w.chaport = {}; v3._q = []; v3._l = {}; v3.q = function () { v3._q.push(arguments) }; v3.on = function (e, fn) { if (!v3._l[e]) v3._l[e] = []; v3._l[e].push(fn) }; var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://app.chaport.com/javascripts/insert.js'; var ss = d.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss) })(window, document);
 
 
   //flecha abajo
-  $(".flecha-abajo a").on("click", function(event) {
+  $(".flecha-abajo a").on("click", function (event) {
     event.preventDefault();
     var hash = this.hash; //obtiene la ruta #..
     $("html, body").animate(
@@ -32,14 +32,14 @@ $(function() {
         scrollTop: $(hash).offset().top
       },
       900,
-      function() {
+      function () {
         window.location.hash = hash;
       }
     );
   });
 
   //botón servicios -->#link-servicios
-  $(".navbar-nav li a").on("click", function(event) {
+  $(".navbar-nav li a").on("click", function (event) {
     // event.preventDefault();-------------------------------Esto me generaba el error de que no me cambia de pagina xD
     var hash = this.hash; //obtiene la ruta #..
     $("html, body").animate(
@@ -47,7 +47,7 @@ $(function() {
         scrollTop: $(hash).offset().top
       },
       900,
-      function() {
+      function () {
         window.location.hash = hash;
       }
     );
@@ -61,26 +61,26 @@ $(function() {
 
 
 // Videotutorial: https://codepen.io/escueladigital/pen/OyLYrW
-$(window).on('scroll',parallax);
+$(window).on('scroll', parallax);
 
-function parallax(){
+function parallax() {
   //obtener el nivel de scroll
   var s = $(window).scrollTop();
   // efecto parallax para los fondos
-  function parallaxBg(el,t){
+  function parallaxBg(el, t) {
     $(el).css({
       'background-attachment': 'fixed',
-      'background-position': 'center ' + -(s*t) + 'px' 
+      'background-position': 'center ' + -(s * t) + 'px'
     })
   }
   // efecto parallax para los textos
-  function parallaxFront(el,t){
+  function parallaxFront(el, t) {
     $(el).css({
       'position': 'relative',
-      'top': -(s*t) + 'px'
+      'top': -(s * t) + 'px'
     })
-  } 
+  }
 
-  parallaxBg('#parallax1',.2);
+  parallaxBg('#parallax1', .2);
   // parallaxFront('.page',.4);
 }
