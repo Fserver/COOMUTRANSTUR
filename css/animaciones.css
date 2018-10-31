@@ -12,7 +12,11 @@
 
   transition-duration: .3s;
 }
+.alianza:hover h4 {
+  color: rgb(0, 119, 255);
+  text-shadow: 1px 1px rgb(255, 255, 255);
 
+}
 /* Generated with Bounce.js. Edit at https://goo.gl/dO5g0N */
 
 @-webkit-keyframes animation { 
