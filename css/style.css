@@ -1,11 +1,55 @@
-
-
+@import url("https://use.fontawesome.com/releases/v5.4.1/css/all.css");
 @import url("https://fonts.googleapis.com/css?family=K2D");
-
+@import url("../css/bootstrap.min.css");
+@import url("../css/font-size.css");
+@import url("../css/normalize.css");
+@import url("../css/animaciones.css");
+@import url("../css/barra-scroll.css");
 body {
-  /* background: white; */
   font-family: "K2D", sans-serif;
-  /* font-size: 19px; */
+  text-shadow: 1px 1px black;
+  color: white;
+  /* background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+"); */
+}
+
+h1 h2 h3 h4 h5 h6 {
+  color: #00933F;
+}
+
+p {
+  margin: 0;
+}
+
+i {
+  color: #00933F;
+}
+
+i:hover {
+  color: rgb(229, 255, 0);
+  transition-duration: .3s;
+}
+
+hr {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  color: rgba(0, 147, 63, 1);
+  text-shadow: 2px 2px rgb(229, 255, 0);
+  font-size: 2.5rem !important;
+}
+
+.title2 {
+  color: rgba(0, 147, 63, 1);
+  text-shadow: 2px 2px rgb(229, 255, 0);
+  font-size: 1.5rem !important;
+}
+
+.green {
+  color: rgba(0, 147, 63, 1);
+  text-shadow: 2px 2px rgb(229, 255, 0);
 }
 
 .js div#preloader {
@@ -16,12 +60,10 @@ body {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: rgba(255, 255, 255, 0.5) url(../img/load.gif) no-repeat center
-    center;
+  background: rgba(255, 255, 255, 0.5) url(../img/load.gif) no-repeat center center fixed;
 }
 
 /* NAVBAR */
-
 
 header li {
   margin-right: 0.4rem;
@@ -32,8 +74,9 @@ header a {
   font-size: 1.1em;
 }
 
-header a:hover{
+header a:hover {
   color: rgba(255, 236, 2, 1);
+  transition-duration: 0.3s;
 }
 
 header .navbar-brand {
@@ -41,21 +84,16 @@ header .navbar-brand {
   text-transform: uppercase;
 }
 
-header .bg-nav-menu{
-  background-color:rgba(11, 101, 14, 0.5);
-}
-
-
-.title{
-  color: rgba(0, 147, 63, 1);
+header .bg-nav-menu {
+  background-color: rgba(11, 101, 14, 0.5);
 }
 
 /* FIN NAVBAR */
 
 /* tamaño del main */
-#main{
+
+#main {
   height: 100vh;
-  /* clip-path: polygon(50% 0%, 100% 0, 100% 65%, 75% 100%, 0 100%, 0 0); */
   clip-path: polygon(50% 0%, 100% 0, 100% 75%, 85% 100%, 0 100%, 0 0);
 }
 
@@ -63,7 +101,7 @@ header .bg-nav-menu{
   min-height: 100%;
   min-width: 100%;
   background-image: url(../img/fondo.jpg);
-  background-position: 0%;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -73,32 +111,32 @@ header .bg-nav-menu{
   height: 100vh;
 }
 
-.overlay { 
-    color:#fff;
-    position:absolute;
-    z-index:12;
-    top:50%;
-    left:0;
-    width:100%;
-    text-align:center;
+.overlay {
+  color: #fff;
+  position: absolute;
+  z-index: 12;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
-.sancipriano{
+.sancipriano {
   text-transform: uppercase;
 }
 
-.logo-index{
+.logo-index {
   height: 20% !important;
 }
 
-.btn-contacto{
+.btn-contacto {
   background-color: rgba(0, 147, 63, 1) !important;
   color: #fff;
 }
-.btn-contacto:hover{
-  background-color:rgba(85, 203, 117, 1) !important;
-}
 
+.btn-contacto:hover {
+  background-color: rgba(85, 203, 117, 1) !important;
+}
 
 .flecha-abajo a i {
   text-align: center;
@@ -108,7 +146,6 @@ header .bg-nav-menu{
   color: #fff;
 }
 
-
 .bg-alainza {
   min-height: 50vh;
   background-image: url(../img/bg1.jpg);
@@ -117,24 +154,12 @@ header .bg-nav-menu{
   background-repeat: no-repeat;
 }
 
-
-
-
-
 .fas.fa-bars {
   color: white !important;
 }
 
-
-
 #servicios {
   background: rgb(163, 255, 151);
-  /* min-height: 100vh; */
-}
-
-#nosotros {
-  padding-top: 1em;
-  padding-bottom: 15px;
   /* min-height: 100vh; */
 }
 
@@ -144,19 +169,14 @@ header .bg-nav-menu{
   /* min-height: 100vh; */
 }
 
-#footer {
-  background: #e9ecef;
-  padding-top: 2em;
+#mapa {
+  filter: brightness(0.6);
+  transition-duration: 0.6s;
 }
 
-#derechos {
-  background-color: #d8d8d8;
-  padding-top: 1em;
-  padding-bottom: 15px;
-}
-
-p {
-  margin: 0;
+#mapa:hover {
+  transition-duration: 0.6s;
+  filter: brightness(1);
 }
 
 .row {
@@ -164,48 +184,190 @@ p {
   margin-right: 0 !important;
 }
 
-/* 
-Pagina        |
-de            |
-Alianza       V
-*/
+.tarjeta {
+  -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+  background-color: white;
+  padding: 1em 0.3em;
+  margin-bottom: 1em;
+}
+
+.tarjeta2 {
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border: 3px solid #adadad;
+  background-color: #00933f;
+  margin: 0.5em;
+  transition-duration: .3s;
+}
+
+.tarjeta2:hover {
+  -webkit-box-shadow: 0px 0px 52px -14px rgba(0, 238, 255, 1);
+  -moz-box-shadow: 0px 0px 52px -14px rgba(0, 238, 255, 1);
+  box-shadow: 0px 0px 52px -14px rgba(0, 238, 255, 1);
+  border: 3px solid #cccccc28;
+  background-color: #06E0FA;
+  transition-duration: .3s;
+}
+
+.tarjeta3 {
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 3px solid #adadad;
+  background-color: white;
+  margin: 0.5em;
+  transition-duration: .3s;
+  position: relative;
+}
+
+.tarjeta3 img {
+  margin: 1em 0;
+}
+
+.tarjeta3 p {
+  margin-bottom: 1em;
+}
+
+.carousel-inner img {
+  max-height: 460px;
+}
+
+/* Alianzas */
 
 .alianza {
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
-  border: 0px solid #000000;
-
-  -webkit-box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.4);
-
-  margin-top: 1em;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 0.5px solid #ccc;
+  background-color: white;
+  transition-duration: 0.3s;
+  color: #b700ff;
+  margin-top: 3em;
   margin-bottom: 1em;
 }
 
-i {
-  color: black;
+.cabecita {
+  width: 100px;
+  height: 70px;
+  position: relative;
+  top: -35px;
+}
+
+.botoncito {
+  position: relative;
+  bottom: -20px;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+  font-weight: 600;
+}
+
+.botoncito:hover {
+  color: rgba(255, 236, 2, 1);
 }
 
 .au {
-  border: solid 2px black;
+  /* Esta vaina es de los elementos "i" de alianza.html */
+  background-color: #ffffff;
   border-radius: 10%;
-  padding: 1px;
-  height: 44px;
-  width: 44px;
+  height: 1.2em;
+  width: 1.2em;
   display: inline-flex;
   justify-content: center;
+  align-items: center;
+  transition-duration: 0.4s;
 }
 
-.au:hover{
-  border: solid 2px rgb(78, 142, 156);
-}
-
-i:hover{
-  color: #7AE1F7;
-}
-
-section > a > img{
+section>a>img {
   width: 90px;
 }
+
+/* Alianzas END */
+
+/* Biodiversidad */
+
+#biodiversidad {
+  margin-top: 5em;
+  background-color: #212020;
+  padding-bottom: 2em;
+  position: relative;
+  padding-top: 5em;
+}
+
+.cabecita2 {
+  height: 200px;
+  width: auto;
+  position: absolute;
+  top: -90px;
+}
+
+/* Biodiversidad END */
+
+/* Gastronomia */
+
+#gastronomia {
+  position: relative;
+  background-color: white;
+  margin-bottom: 2em;
+}
+
+#parallax1 {
+  background-image: url(../img/gastronomia.jpg);
+  opacity: .6;
+  background-size: auto 150vh;
+  background-position: center center;
+  height: 400px;
+  position: relative;
+}
+
+.contenido-parallax {
+  top: 0;
+  position: absolute;
+  height: 400px;
+  color: white;
+}
+
+/* Gastronomia END */
+
+/* Footer */
+
+#footer {
+  background-color: #315700;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 15px;
+}
+
+#footer i {
+  color: #FFEE00;
+}
+
+#footer i:hover {
+  color: white;
+  transition-duration: 0.3s;
+}
+
+/* Footer END */
+
+/* Acerca de  */
+
+.plash {
+  background-color: #45fe00;
+  max-height: 600px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
+  z-index: 0;
+}
+
+/* Acerca de END */
