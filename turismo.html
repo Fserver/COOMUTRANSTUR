@@ -9,7 +9,6 @@
     <title>COOMUSTRANSTUR</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -64,6 +63,37 @@
                 </header>
                 <!-- texto main -->
     </section>
+
+
+    <main>
+
+        <div>
+            <img class="lazy" data-src="https://picsum.photos/700" alt="">
+            <img class="lazy" data-src="https://picsum.photos/600" alt="">
+            <img class="lazy" data-src="https://picsum.photos/800" alt="">
+            <img class="lazy" data-src="https://picsum.photos/900" alt="">
+        </div>
+
+    </main>
+
+
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+        $('.lazy').Lazy({
+            // your configuration goes here
+            scrollDirection: 'vertical',
+            effect: 'fadeIn',
+            visibleOnly: true,
+            onError: function (element) {
+                console.log('error loading ' + element.data('src'));
+            }
+        });
+    </script>
+
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
