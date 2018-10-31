@@ -303,19 +303,15 @@ Alianza       V
 }
 
 .au {
-  border: solid 2px rgba(0, 255, 34, 0.856);
+  /* Esta vaina es de los elementos "i" de alianza.html */
   background-color: #ffffff;
   border-radius: 10%;
-  padding-top: 4px;
-  height: 44px;
-  width: 44px;
+
+  height: 1.2em;
+  width: 1.2em;
   display: inline-flex;
   justify-content: center;
-  transition-duration: 0.4s;
-}
-
-.au:hover {
-  background-color: rgb(255, 255, 124);
+  align-items: center;
   transition-duration: 0.4s;
 }
 
