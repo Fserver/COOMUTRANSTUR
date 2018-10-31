@@ -244,11 +244,7 @@ header .bg-nav-menu {
   max-height: 460px;
 }
 
-/* 
-Pagina        |
-de            |
-Alianza       V
-*/
+/* Alianzas */
 
 .alianza {
   border-radius: 10px 10px 10px 10px;
@@ -286,28 +282,10 @@ Alianza       V
   color: rgba(255, 236, 2, 1);
 }
 
-/* Footer */
-#footer {
-  background-color: #315700;
-  color: white;
-  padding-top: 1em;
-  padding-bottom: 15px;
-}
-#footer i {
-  color: #FFEE00;
-}
-
-#footer i:hover {
-  color: white;
-  transition-duration: 0.3s;
-}
-/* Footer END */
-
 .au {
   /* Esta vaina es de los elementos "i" de alianza.html */
   background-color: #ffffff;
   border-radius: 10%;
-
   height: 1.2em;
   width: 1.2em;
   display: inline-flex;
@@ -320,13 +298,9 @@ section>a>img {
   width: 90px;
 }
 
-.plash {
-  background-color: #45fe00;
-  max-height: 600px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
-  z-index: 0;
-}
+/* Alianzas END */
+
+/* Biodiversidad */
 
 #biodiversidad {
   margin-top: 5em;
@@ -342,6 +316,10 @@ section>a>img {
   position: absolute;
   top: -90px;
 }
+
+/* Biodiversidad END */
+
+/* Gastronomia */
 
 #gastronomia {
   position: relative;
@@ -364,3 +342,37 @@ section>a>img {
   height: 400px;
   color: white;
 }
+
+/* Gastronomia END */
+
+/* Footer */
+
+#footer {
+  background-color: #315700;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 15px;
+}
+
+#footer i {
+  color: #FFEE00;
+}
+
+#footer i:hover {
+  color: white;
+  transition-duration: 0.3s;
+}
+
+/* Footer END */
+
+/* Acerca de  */
+
+.plash {
+  background-color: #45fe00;
+  max-height: 600px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
+  z-index: 0;
+}
+
+/* Acerca de END */
