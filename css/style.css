@@ -184,13 +184,6 @@ header .bg-nav-menu {
   filter: brightness(1);
 }
 
-#footer {
-  background-color: #315700;
-  color: white;
-  padding-top: 1em;
-  padding-bottom: 15px;
-}
-
 .row {
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -293,6 +286,13 @@ Alianza       V
   color: rgba(255, 236, 2, 1);
 }
 
+/* Footer */
+#footer {
+  background-color: #315700;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 15px;
+}
 #footer i {
   color: #FFEE00;
 }
@@ -301,6 +301,7 @@ Alianza       V
   color: white;
   transition-duration: 0.3s;
 }
+/* Footer END */
 
 .au {
   /* Esta vaina es de los elementos "i" de alianza.html */
