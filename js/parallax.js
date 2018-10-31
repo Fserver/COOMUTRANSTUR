@@ -19,6 +19,6 @@ function parallax() {
     })
   }
 
-  parallaxBg('#parallax1', .1);
+  parallaxBg('#parallax1, #parallax2', .1);
   // parallaxFront('.page',.4);
 }

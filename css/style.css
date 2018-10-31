@@ -295,7 +295,7 @@ section>a>img {
 
 /* Alianzas END */
 
-/* Biodiversidad */
+/* Biodiversidad index.html */
 
 #biodiversidad {
   margin-top: 5em;
@@ -314,7 +314,7 @@ section>a>img {
 
 /* Biodiversidad END */
 
-/* Gastronomia */
+/* Gastronomia index.html*/
 
 #gastronomia {
   position: relative;
@@ -340,7 +340,26 @@ section>a>img {
 
 /* Gastronomia END */
 
-/* Footer */
+/* Cultura del paficio index.html */
+
+#cultura {
+  position: relative;
+  background-color: white;
+  margin-bottom: 2em;
+}
+
+#parallax2 {
+  background-image: url(../img/cultura.jpg);
+  opacity: .6;
+  background-size: auto 150vh;
+  background-position: center center;
+  height: 400px;
+  position: relative;
+}
+
+/* Cultura del paficio END */
+
+/* Footer GENERAL */
 
 #footer {
   background-color: #315700;
@@ -360,7 +379,7 @@ section>a>img {
 
 /* Footer END */
 
-/* Acerca de  */
+/* Acerca de  nosotros.html*/
 
 .plash {
   background-color: #45fe00;
