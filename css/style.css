@@ -133,6 +133,8 @@ header .bg-nav-menu {
   bottom: 25px;
   font-size: 38px;
   color: #fff;
+  animation-duration: 2s;
+  animation-delay: .3s;
 }
 
 /* FIN MAIN */

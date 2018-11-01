@@ -72,8 +72,9 @@
 
 
 .flecha-abajo:hover {
-  -webkit-animation: animation2 1000ms linear;
-  animation: animation2 1000ms linear;
+  -webkit-animation: animation2 2000ms linear;
+  animation: animation2 2000ms linear;
+  animation-delay: .3s;
 }
 
 /* Generated with Bounce.js. Edit at https://goo.gl/aGCfrT */
