@@ -410,16 +410,19 @@
   <script src="js/parallax.js"></script>
   <script src="js/ism-2.2.min.js"></script>
   <script src="js/typed.js"></script>
+  <script src="js/in-view.min.js"></script>
   <script src="js/app.js"></script>
 
   <script>
     AOS.init();
 
-    var texto= "Si aun no quedas satisfecho puedes probar en enviaros un mensaje por nuestros diversos medios de comunicacion:",
+    inView('#typed')
+    .on('enter', function(){
+      var texto= "Si aun no quedas satisfecho puedes probar en enviaros un mensaje por nuestros diversos medios de comunicacion:",
     lista=["<ol> <li>Formulario de contacto</li> <li>Chat en línea</li> <li>Mensaje de Whatsapp</li> </ol>"];
 
     new Typed('#typed', {
-      strings: [texto+lista],
+      strings: [texto+'<br><br>'+lista],
       startDelay: 1500,
       typeSpeed: 40,
       cursorChar: '_',
@@ -427,6 +430,9 @@
       smartBackspace: false,
       loop: false,
     });
+    });
+
+    
   </script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
