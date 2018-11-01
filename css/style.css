@@ -5,11 +5,24 @@
 @import url("../css/normalize.css");
 @import url("../css/animaciones.css");
 @import url("../css/barra-scroll.css");
+/* Generales ------------------------------------------------------ */
+
+.js div#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: rgba(255, 255, 255, 0.5) url(../img/load.gif) no-repeat center center fixed;
+}
+
 body {
   font-family: "K2D", sans-serif;
   text-shadow: 1px 1px black;
   color: white;
-  /* background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+"); */
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
 }
 
 h1 h2 h3 h4 h5 h6 {
@@ -33,34 +46,6 @@ hr {
   height: 12px;
   border: 0;
   box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-}
-
-.title {
-  color: rgba(0, 147, 63, 1);
-  text-shadow: 2px 2px rgb(229, 255, 0);
-  font-size: 2.5rem !important;
-}
-
-.title2 {
-  color: rgba(0, 147, 63, 1);
-  text-shadow: 2px 2px rgb(229, 255, 0);
-  font-size: 1.5rem !important;
-}
-
-.green {
-  color: rgba(0, 147, 63, 1);
-  text-shadow: 2px 2px rgb(229, 255, 0);
-}
-
-.js div#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  background: rgba(255, 255, 255, 0.5) url(../img/load.gif) no-repeat center center fixed;
 }
 
 /* NAVBAR */
@@ -90,7 +75,7 @@ header .bg-nav-menu {
 
 /* FIN NAVBAR */
 
-/* tamaño del main */
+/* MAIN */
 
 #main {
   height: 100vh;
@@ -146,16 +131,132 @@ header .bg-nav-menu {
   color: #fff;
 }
 
+/* FIN MAIN */
+
+/* Footer */
+
+#footer {
+  background-color: #315700;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 15px;
+}
+
+#footer i {
+  color: #FFEE00;
+}
+
+#footer i:hover {
+  color: white;
+  transition-duration: 0.3s;
+}
+
+/* FIN Footer */
+
+.title {
+  color: rgba(0, 147, 63, 1);
+  text-shadow: 2px 2px rgb(229, 255, 0);
+  font-size: 2.5rem !important;
+}
+
+.title2 {
+  color: rgba(0, 147, 63, 1);
+  text-shadow: 2px 2px rgb(229, 255, 0);
+  font-size: 1.5rem !important;
+}
+
+.green {
+  color: rgba(0, 147, 63, 1);
+  text-shadow: 2px 2px rgb(229, 255, 0);
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.fas.fa-bars {
+  color: white !important;
+}
+
+/* FIN Generales */
+
+/* Index.html ------------------------------------------------------ */
+
+/* Biodiversidad index.html */
+
+#biodiversidad {
+  margin-top: 5em;
+  background-color: #212020;
+  padding-bottom: 2em;
+  position: relative;
+  padding-top: 5em;
+}
+
+.cabecita2 {
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  top: -90px;
+}
+
+/* FIN Biodiversidad */
+
+/* Gastronomia index.html*/
+
+#gastronomia {
+  position: relative;
+  background-color: white;
+  margin-bottom: 2em;
+  margin-top: 5em;
+}
+
+#parallax1 {
+  background-image: url(../img/gastronomia.jpg);
+  opacity: .6;
+  background-size: auto 150vh;
+  background-position: center center;
+  height: 400px;
+  position: relative;
+}
+
+.contenido-parallax {
+  top: 0;
+  position: absolute;
+  height: 400px;
+  color: white;
+}
+
+/* FIN Gastronomia */
+
+/* Cultura del paficio index.html */
+
+#cultura {
+  position: relative;
+  background-color: white;
+  margin-bottom: 2em;
+  margin-top: 5em;
+}
+
+#parallax2 {
+  background-image: url(../img/cultura.jpg);
+  opacity: .6;
+  background-size: auto 150vh;
+  background-position: center center;
+  height: 400px;
+  position: relative;
+}
+
+/* FIN Cultura */
+
+/* END Index.html -------------------------------------------------- */
+
 .bg-alainza {
   min-height: 50vh;
   background-image: url(../img/bg1.jpg);
   background-position: 0%;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.fas.fa-bars {
-  color: white !important;
 }
 
 #servicios {
@@ -177,11 +278,6 @@ header .bg-nav-menu {
 #mapa:hover {
   transition-duration: 0.6s;
   filter: brightness(1);
-}
-
-.row {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
 }
 
 .tarjeta {
@@ -294,92 +390,6 @@ section>a>img {
 }
 
 /* Alianzas END */
-
-/* Biodiversidad index.html */
-
-#biodiversidad {
-  margin-top: 5em;
-  background-color: #212020;
-  padding-bottom: 2em;
-  position: relative;
-  padding-top: 5em;
-}
-
-.cabecita2 {
-  height: 180px;
-  width: 180px;
-  position: absolute;
-  top: -90px;
-}
-
-/* Biodiversidad END */
-
-/* Gastronomia index.html*/
-
-#gastronomia {
-  position: relative;
-  background-color: white;
-  margin-bottom: 2em;
-  margin-top: 5em;
-}
-
-#parallax1 {
-  background-image: url(../img/gastronomia.jpg);
-  opacity: .6;
-  background-size: auto 150vh;
-  background-position: center center;
-  height: 400px;
-  position: relative;
-}
-
-.contenido-parallax {
-  top: 0;
-  position: absolute;
-  height: 400px;
-  color: white;
-}
-
-/* Gastronomia END */
-
-/* Cultura del paficio index.html */
-
-#cultura {
-  position: relative;
-  background-color: white;
-  margin-bottom: 2em;
-  margin-top: 5em;
-}
-
-#parallax2 {
-  background-image: url(../img/cultura.jpg);
-  opacity: .6;
-  background-size: auto 150vh;
-  background-position: center center;
-  height: 400px;
-  position: relative;
-}
-
-/* Cultura del paficio END */
-
-/* Footer GENERAL */
-
-#footer {
-  background-color: #315700;
-  color: white;
-  padding-top: 1em;
-  padding-bottom: 15px;
-}
-
-#footer i {
-  color: #FFEE00;
-}
-
-#footer i:hover {
-  color: white;
-  transition-duration: 0.3s;
-}
-
-/* Footer END */
 
 /* Acerca de  nosotros.html*/
 
