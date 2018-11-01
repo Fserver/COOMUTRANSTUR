@@ -124,7 +124,7 @@
           </div>
         </div>
 
-        <div class="col col-xl-6 tarjeta2">
+        <div class="col col-sm-10 col-xl-6 tarjeta2">
           <h3 class="green">Noticias</h3>
 
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -167,9 +167,17 @@
           </div>
 
         </div>
-        <div class="col-sm-5 col-xl-5">
-          <a class="twitter-timeline" data-height="400" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets
-            by TwitterDev</a>
+        <div class="col-sm-12 col-xl-6">
+
+          <div class="row d-flex align-items-center">
+            <div class="col-sm-6"> <a class="twitter-timeline" data-height="400" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets
+                by TwitterDev</a>
+            </div>
+            <div class="col-sm-6">
+              <div id="facebook-container" class="fb-comments" data-href="https://fserver.github.io/" data-height="400"
+                data-width="100%" data-numposts="5"></div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -336,9 +344,8 @@
   </section>
 
 
-  <section class="container">
-    <div class="fb-comments" data-href="https://fserver.github.io/" data-width="100%" data-numposts="5"></div>
-  </section>
+
+
 
 
   <!-- Footer  -->
@@ -419,18 +426,18 @@
     });
 
     inView('#typed').once('enter', function () {
-        var texto = "Si aun no quedas satisfecho puedes probar en enviaros un mensaje por nuestros diversos medios de comunicacion:",
-          lista = ["<ol> <li>Formulario de contacto</li> <li>Chat en línea</li> <li>Mensaje de Whatsapp</li> </ol>"];
+      var texto = "Si aun no quedas satisfecho puedes probar en enviaros un mensaje por nuestros diversos medios de comunicacion:",
+        lista = ["<ol> <li>Formulario de contacto</li> <li>Chat en línea</li> <li>Mensaje de Whatsapp</li> </ol>"];
 
-        new Typed('#typed', {
-          strings: [texto + '<br><br>' + lista],
-          startDelay: 1500,
-          typeSpeed: 40,
-          cursorChar: '_',
-          smartBackspace: false,
-          loop: false,
-        });
+      new Typed('#typed', {
+        strings: [texto + '<br><br>' + lista],
+        startDelay: 1500,
+        typeSpeed: 40,
+        cursorChar: '_',
+        smartBackspace: false,
+        loop: false,
       });
+    });
 
 
   </script>
