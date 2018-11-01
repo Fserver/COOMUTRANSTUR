@@ -414,9 +414,11 @@
   <script src="js/app.js"></script>
 
   <script>
-    AOS.init();
+    AOS.init({
+      once: true
+    });
 
-    inView('#typed').on('enter', function () {
+    inView('#typed').once('enter', function () {
         var texto = "Si aun no quedas satisfecho puedes probar en enviaros un mensaje por nuestros diversos medios de comunicacion:",
           lista = ["<ol> <li>Formulario de contacto</li> <li>Chat en línea</li> <li>Mensaje de Whatsapp</li> </ol>"];
 
