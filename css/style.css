@@ -266,6 +266,10 @@ header .bg-nav-menu {
   filter: brightness(1);
 }
 
+#escrito {
+  min-height: 350px;
+}
+
 /* END Index.html -------------------------------------------------- */
 
 /* alianzas.html -------------------------------------------------- */
