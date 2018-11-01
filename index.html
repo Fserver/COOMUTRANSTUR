@@ -287,10 +287,10 @@
 
           <div id="escrito" class="d-none d-md-block">
             <div class="d-none d-md-block" data-aos="fade-right" data-aos-duration="1000">
-                <h3 class="title">Hola</h3>
+              <h3 class="title">Hola</h3>
             </div>
 
-              <p id="typed" class="d-inline text-justify text-info"></p>
+            <p id="typed" class="d-inline text-justify text-info"></p>
           </div>
 
         </div>
@@ -416,23 +416,21 @@
   <script>
     AOS.init();
 
-    inView('#typed')
-    .on('enter', function(){
-      var texto= "Si aun no quedas satisfecho puedes probar en enviaros un mensaje por nuestros diversos medios de comunicacion:",
-    lista=["<ol> <li>Formulario de contacto</li> <li>Chat en línea</li> <li>Mensaje de Whatsapp</li> </ol>"];
+    inView('#typed').on('enter', function () {
+        var texto = "Si aun no quedas satisfecho puedes probar en enviaros un mensaje por nuestros diversos medios de comunicacion:",
+          lista = ["<ol> <li>Formulario de contacto</li> <li>Chat en línea</li> <li>Mensaje de Whatsapp</li> </ol>"];
 
-    new Typed('#typed', {
-      strings: [texto+'<br><br>'+lista],
-      startDelay: 1500,
-      typeSpeed: 40,
-      cursorChar: '_',
-      backSpeed: 20,
-      smartBackspace: false,
-      loop: false,
-    });
-    });
+        new Typed('#typed', {
+          strings: [texto + '<br><br>' + lista],
+          startDelay: 1500,
+          typeSpeed: 40,
+          cursorChar: '_',
+          smartBackspace: false,
+          loop: false,
+        });
+      });
 
-    
+
   </script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
