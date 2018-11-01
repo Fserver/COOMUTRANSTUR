@@ -73,6 +73,10 @@ header .bg-nav-menu {
   background-color: rgba(11, 101, 14, 0.5);
 }
 
+.fas.fa-bars {
+  color: white !important;
+}
+
 /* FIN NAVBAR */
 
 /* MAIN */
@@ -141,6 +145,7 @@ header .bg-nav-menu {
   padding-top: 1em;
   padding-bottom: 15px;
 }
+
 .footer {
   background-color: #008E00;
 }
@@ -176,10 +181,6 @@ header .bg-nav-menu {
 .row {
   margin-left: 0 !important;
   margin-right: 0 !important;
-}
-
-.fas.fa-bars {
-  color: white !important;
 }
 
 /* FIN Generales */
@@ -392,7 +393,8 @@ header .bg-nav-menu {
   transition-duration: 0.4s;
 }
 
-section>a>img { /* esto controla el tamaño de las imagenes del modal */
+section>a>img {
+  /* esto controla el tamaño de las imagenes del modal */
   width: 90px;
 }
 
