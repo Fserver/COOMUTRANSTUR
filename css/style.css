@@ -141,13 +141,16 @@ header .bg-nav-menu {
   padding-top: 1em;
   padding-bottom: 15px;
 }
+.footer {
+  background-color: #008E00;
+}
 
-#footer i {
-  color: #FFEE00;
+#footer, .footer i {
+  color: white;
 }
 
 #footer i:hover {
-  color: white;
+  color: #FFEE00;
   transition-duration: 0.3s;
 }
 
@@ -249,27 +252,6 @@ header .bg-nav-menu {
 
 /* FIN Cultura */
 
-/* END Index.html -------------------------------------------------- */
-
-.bg-alainza {
-  min-height: 50vh;
-  background-image: url(../img/bg1.jpg);
-  background-position: 0%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#servicios {
-  background: rgb(163, 255, 151);
-  /* min-height: 100vh; */
-}
-
-#politica {
-  padding-top: 1em;
-  padding-bottom: 15px;
-  /* min-height: 100vh; */
-}
-
 #mapa {
   filter: brightness(0.6);
   transition-duration: 0.6s;
@@ -279,6 +261,30 @@ header .bg-nav-menu {
   transition-duration: 0.6s;
   filter: brightness(1);
 }
+
+/* END Index.html -------------------------------------------------- */
+
+/* alianzas.html -------------------------------------------------- */
+
+.bg-alainza {
+  min-height: 50vh;
+  background-image: url(../img/bg1.jpg);
+  background-position: 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* alianzas.html -------------------------------------------------- */
+
+/* Politica.html -------------------------------------------------- */
+
+#politica {
+  padding-top: 1em;
+  padding-bottom: 15px;
+  /* min-height: 100vh; */
+}
+
+/* FIN Politica.html -------------------------------------------------- */
 
 .tarjeta {
   -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
@@ -298,9 +304,9 @@ header .bg-nav-menu {
   -moz-border-radius: 15px 15px 15px 15px;
   -webkit-border-radius: 15px 15px 15px 15px;
   border: 3px solid #adadad;
-  background-color: #00933f;
-  margin: 0.5em;
+  background-color: white;
   transition-duration: .3s;
+  height: 400px;
 }
 
 .tarjeta2:hover {
@@ -332,10 +338,10 @@ header .bg-nav-menu {
 }
 
 .carousel-inner img {
-  max-height: 460px;
+  max-height: 350px;
 }
 
-/* Alianzas */
+/* Alianzas.html -------------------------------------------------- */
 
 .alianza {
   border-radius: 10px 10px 10px 10px;
@@ -385,13 +391,13 @@ header .bg-nav-menu {
   transition-duration: 0.4s;
 }
 
-section>a>img {
+section>a>img { /* esto controla el tamaño de las imagenes del modal */
   width: 90px;
 }
 
-/* Alianzas END */
+/* FIN Alianzas -------------------------------------------------- */
 
-/* Acerca de  nosotros.html*/
+/* nosotros.html --------------------------------------------------*/
 
 .plash {
   background-color: #45fe00;
@@ -401,4 +407,4 @@ section>a>img {
   z-index: 0;
 }
 
-/* Acerca de END */
+/* FIN nosotros.html -------------------------------------------------- */
