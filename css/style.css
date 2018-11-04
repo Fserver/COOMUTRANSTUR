@@ -278,6 +278,7 @@ header .bg-nav-menu {
   background-color: white;
 }
 
+
 /* END Index.html -------------------------------------------------- */
 
 /* alianzas.html -------------------------------------------------- */
@@ -436,6 +437,7 @@ section>a>img {
   clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
   z-index: 0;
 }
+
 #logo_acerca {
   height: 300px;
 }
