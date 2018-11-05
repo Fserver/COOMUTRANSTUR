@@ -10,6 +10,7 @@
 
     <title>COOMUSTRANSTUR</title>
 
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.min.js"></script>
 </head>
@@ -136,16 +137,6 @@
             </div>
 
             <div class="w-100 mb-5"></div>
-
-
-
-
-
-
-
-
-
-
             <div class="col-12">
                 <div class="row justify-content-around">
 
@@ -162,31 +153,19 @@
                             </p>
                         </div>
                     </div>
-                    
+
                     <div class="col-xl-2 d-none d-xl-block">
                         <div class="d-flex align-items-center">
-                                <img class="img-fluid" src="img/success.jpg" alt="">
+                            <img class="img-fluid" src="img/success.jpg" alt="">
 
                         </div>
                     </div>
                 </div>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
             <div class="w-100"></div>
             <div class="col-12 d-flex justify-content-center align-items-center p-5">
-                <h5 class="text-center">
+                <h5 class="text-center pl-5">
                     <strong class="text-success"> Valores corporativos:</strong>
                 </h5>
                 <div class="text-center">
@@ -283,7 +262,7 @@
 
 
     <!-- Footer  -->
-    <section id="footer" class="">
+    <section id="footer">
         <div class="row">
             <div class="col-12 text-center">
                 <p>COOPERATIVA MULTIATIVA DE TRANSPORTE TURISTICO EN EL CORREGIMIENTO DE CORDOBA Y SAN CIPRIANO</p>
@@ -307,8 +286,13 @@
     <!-- Scripts -->
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/aos.js"></script>
 
     <script>
+        AOS.init();
+    </script>
+    <script>
+
         var scene = document.getElementById('scene');
         var parallaxInstance = new Parallax(scene);
         parallaxInstance.invert(false, false);
