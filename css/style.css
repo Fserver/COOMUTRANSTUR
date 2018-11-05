@@ -449,6 +449,9 @@ section>a>img {
   font-size: 1.3em;
   position: relative;
 }
+#mision_vision {
+  height: 100vh;
+}
 
 .color {
   background-color: #0de3fa;
