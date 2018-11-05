@@ -449,8 +449,15 @@ section>a>img {
   font-size: 1.3em;
   position: relative;
 }
-#mision_vision {
-  height: 100vh;
+#vision {
+  position: relative;
+  height: 50vh;
+  background-color: greenyellow;
+}
+#mision {
+  position: relative;
+  height: 50vh;
+  background-color: #FFEF00;
 }
 
 .color {
