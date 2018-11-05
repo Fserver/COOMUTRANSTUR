@@ -12,7 +12,7 @@
 
   <title>COOMUSTRANSTUR</title>
 
-  <link rel="stylesheet" href="css/my-slider.css"/>
+  <link rel="stylesheet" href="css/my-slider.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/aos.css">
 
@@ -37,6 +37,7 @@
               <div class="col">
                 <a class="navbar-brand ml-3 d-none d-md-block" href="#"><span class="title font-weight-bold">Coomutranstur</span><br></a>
                 <a class="title2 navbar-brand ml-3 d-block d-md-none" href="#"><span class="title2 font-weight-bold">Coomutranstur</span><br></a>
+
               </div>
               <div class="col d-none d-sm-inline-block">
                 <ul class="navbar-nav mt-2 float-right">
@@ -124,8 +125,8 @@
           </div>
         </div>
 
-        <div class="col col-xl-6 tarjeta2 he">
-          <h3>Noticias</h3>
+        <div class="col col-sm-10 col-xl-6 tarjeta2">
+          <h3 class="green">Noticias</h3>
 
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -167,12 +168,16 @@
           </div>
 
         </div>
-        <div class="col-sm-5 col-xl-5 tarjeta2">
-          <h3>Eventos</h3>
+        <div class="col-sm-12 col-xl-6">
 
-          <div>
-            <a class="twitter-timeline" data-height="430" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets
-              by TwitterDev</a>
+          <div class="row d-flex align-items-center">
+            <div class="col-sm-6"> <a class="twitter-timeline" data-height="400" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets
+                by TwitterDev</a>
+            </div>
+            <div class="col-sm-6">
+              <div id="facebook-container" class="fb-comments" data-href="https://fserver.github.io/" data-height="400"
+                data-width="100%" data-numposts="5"></div>
+            </div>
           </div>
         </div>
 
@@ -182,7 +187,7 @@
     <section id="biodiversidad">
       <div class="container-fluid p-0">
         <div class="d-flex justify-content-center">
-          <img class="cabecita2" src="img/biodiversidad.png" alt="">
+          <img class="cabecita2 d-none d-sm-block" src="img/biodiversidad.png" alt="">
         </div>
         <div class="row text-center justify-content-around">
 
@@ -190,48 +195,25 @@
             <p class="text-uppercase">Rincón de Biodiversidad en la zona</p>
           </div>
 
-          <!-- <div class="col-sm-5 col-md-3 col-lg-2 tarjeta3">
-            <img class="img-fluid" src="holder.js/500x300?auto=yes" alt="">
-
-            <div class="">
-              <p>San Cipriano</p>
-            </div>
-          </div>
-
-          <div class="col-sm-5 col-md-3 col-lg-2 tarjeta3">
-            <img class="img-fluid" src="holder.js/500x300?auto=yes" alt="">
-
-            <div class="">
-              <p>Otro lugar</p>
-            </div>
-          </div>
-
-          <div class="col-sm-5 col-md-3 col-lg-2 tarjeta3">
-            <img class="img-fluid" src="holder.js/500x300?auto=yes" alt="">
-
-            <div class="">
-              <p>Otro lugar más</p>
-            </div>
-          </div> -->
-
           <div class="ism-slider" data-transition_type="zoom" data-interval="3000" data-radio_type="thumbnail" id="my-slider">
-              <ol>
-                <li>
-                  <img src="img/bg1.jpg">
-                  <div class="ism-caption ism-caption-0">San Cripriano</div>
-                </li>
-                <li>
-                  <img src="img/bg3.jpg">
-                  <div class="ism-caption ism-caption-0">Córdoba</div>
-                </li>
-                <li>
-                  <img src="img/bg4.jpg">
-                  <div class="ism-caption ism-caption-0">B/Tura</div>
-                </li>
-              </ol>
-            </div>
-            <p class="d-none ism-badge" id="my-slider-ism-badge"><a class="ism-link" href="http://imageslidermaker.com" rel="nofollow">generated with ISM</a></p>
-            
+            <ol>
+              <li>
+                <img src="img/bg1.jpg">
+                <div class="ism-caption ism-caption-0">San Cripriano</div>
+              </li>
+              <li>
+                <img src="img/bg3.jpg">
+                <div class="ism-caption ism-caption-0">Córdoba</div>
+              </li>
+              <li>
+                <img src="img/bg4.jpg">
+                <div class="ism-caption ism-caption-0">B/Tura</div>
+              </li>
+            </ol>
+          </div>
+          <p class="d-none ism-badge" id="my-slider-ism-badge"><a class="ism-link" href="http://imageslidermaker.com"
+              rel="nofollow">generated with ISM</a></p>
+
 
         </div>
       </div>
@@ -239,7 +221,11 @@
 
     <section id="gastronomia">
       <div id="parallax1"></div>
+      <div class="d-flex justify-content-center justify-content-center">
+        <img class="cabecita2 d-none d-sm-block" src="img/gastronomia.png" alt="">
+      </div>
       <div class="container-fluid contenido-parallax d-flex align-items-center p-0">
+
         <div class="row text-center">
 
           <div class="col-12 mb-3 title  font-weight-bold">
@@ -251,11 +237,11 @@
               Entre sus platos más reconocidos se encuentran los aborrajados de pescado, ensalada de calamar, camarón o
               langostinos; empanadas de jaiba; sopa de lentejas, gazapo, almejas y cangrejo; pusandao (caldo de bagre);
               quebrao (sancocho de carne serrana salada en cecina); pargo o corvina, cazuela de mariscos; chaupiza
-              (pescado pequeño) y huevos de piando, entre otros
+              (pescado pequeño) y huevos de piando, entre otros.
             </p>
           </div>
           <div class="col-12">
-              <a name="" id="" class="btn botoncito btn-success" href="#!" role="button">Ver más</a>
+            <a name="" id="" class="btn botoncito btn-success" href="#!" role="button">Ver más</a>
           </div>
         </div>
       </div>
@@ -264,69 +250,67 @@
 
 
 
-    <section id="cultira">
-      <div class="contaienr">
-        <div class="row">
+    <section id="cultura" class="">
+      <div id="parallax2"></div>
+      <div class="d-flex justify-content-center justify-content-center">
+        <img class="cabecita2 d-none d-sm-block" src="img/cultura.png" alt="">
+      </div>
+      <div class="container-fluid contenido-parallax d-flex align-items-center p-0">
 
-          <div class="col mb-3 text-center title font-weight-bold">
-            <p class="text-uppercase">Cultura de la región pacífico</p>
+
+        <div class="row text-center">
+
+          <div class="col-12 mb-3 title  font-weight-bold">
+            <p class="text-uppercase">Cultura del pacífico</p>
           </div>
 
+          <div class="col">
+            <p class="text-justify">
+              La cultura de la región Pacífica de Colombia se destaca por ser afrocolombiana. Es una cultura muy
+              difundida en el litoral y expresada a través de su folclor e historia.
+
+              Las danzas, la música, la gastronomía e incluso la forma de vestir del chocoano, el valle caucano, el
+              nariñense y el caucano, se ven fuertemente marcadas por esta afrocolombianidad.
+            </p>
+          </div>
+          <div class="col-12">
+            <a name="" id="" class="btn botoncito btn-success" href="#!" role="button">Ver más</a>
+          </div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <div class="container-fluid pl-0 pr-0 mb-5 mt-4">
-    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.692860584939!2d-76.93038208467371!3d3.875888349334545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e373bfac0c11d7d%3A0xa41564121f3506cb!2sCooperativa+Multiactiva+de+Transportadores+Turisticos+de+Cordoba+y+San+Cipriano+-+COOMUTRANSTUR!5e0!3m2!1ses-419!2sco!4v1540246532405"
-      width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </div>
-
   <!-- Contacto  -->
   <section id="contacto">
 
     <div class="container-fluid">
-      <div class="row">
+      <div class="row justify-content-around">
 
-        <div class="col mb-3 text-center title font-weight-bold">
+        <div class="col-12 mb-3 text-center title font-weight-bold">
           <p class="text-uppercase">Contáctenos</p>
         </div>
 
-        <div class="w-100"></div>
-        <div class="col-md-6 col-lg-4 d-flex align-items-center">
+        <div class="col d-flex align-items-center ml-5 mr-5">
 
-          <div class="tarjeta row green">
-            <!-- clase tajerta -->
-            <div class="col-md-2">
-              <i class="fas fa-phone-square fa-2x align-self-center mr-1"></i>
-            </div>
-            <div class="col">
-              (57) 3148340811 <br>
-              (57) 3148302152 <br>
-              (57) 3155777327 <br>
-              <span><small>Lunes a viernes de 8am-6pm</small></span>
+          <div id="escrito" class="d-none d-md-block">
+            <div class="d-none d-md-block" data-aos="fade-right" data-aos-duration="1000">
+              <h3 class="title">¡Hola!</h3>
             </div>
 
-            <div class="w-100">
-              <hr>
-            </div>
-            <div class="col-md-2">
-              <i class="fas fa-envelope fa-2x align-self-center mr-1"></i>
-            </div>
-            <div class="col">
-              www.coomutranstur@hotmail.com
-            </div>
+            <p id="typed" class="d-inline text-justify text-info"></p>
           </div>
 
         </div>
-        <div class="col-md-6 col-lg-8">
+
+        <div class="col-lg-6">
           <div class="tarjeta row">
             <div class="col-md-12">
               <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                   <fieldset>
-                    <legend class="text-center header title2">¿Tiene una pregunta?</legend>
+                    <legend class="text-center header title2">Formulario de Contacto</legend>
 
                     <div class="form-group">
                       <input required id="fname" name="name" type="text" placeholder="Nombre completo" class="form-control">
@@ -361,14 +345,48 @@
   </section>
 
 
-  <section class="container">
-    <div class="fb-comments" data-href="https://fserver.github.io/" data-width="100%" data-numposts="5"></div>
-  </section>
+
+
 
 
   <!-- Footer  -->
-  <section id="footer" class="mt-4">
-    <div class="row">
+  <section class="footer">
+    <div class="row d-flex align-items-center justify-content-center p-0">
+
+      <div class="order-1 col-md-6">
+        <div class="row">
+          <!-- clase tajerta -->
+          <div class="col-md-2">
+            <i class="fas fa-phone-square fa-2x align-self-center mr-1"></i>
+          </div>
+          <div class="col">
+            (57) 3148340811 <br>
+            (57) 3148302152 <br>
+            (57) 3155777327 <br>
+            <span><small>Lunes a viernes de 8am-6pm</small></span>
+          </div>
+
+          <div class="w-100">
+            <hr>
+          </div>
+          <div class="col-md-2">
+            <i class="fas fa-envelope fa-2x align-self-center mr-1"></i>
+          </div>
+          <div class="col">
+            www.coomutranstur@hotmail.com
+          </div>
+        </div>
+      </div>
+
+      <div class="order-0 col-md-6 p-0">
+        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.692860584939!2d-76.93038208467371!3d3.875888349334545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e373bfac0c11d7d%3A0xa41564121f3506cb!2sCooperativa+Multiactiva+de+Transportadores+Turisticos+de+Cordoba+y+San+Cipriano+-+COOMUTRANSTUR!5e0!3m2!1ses-419!2sco!4v1540246532405"
+          width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+    </div>
+
+
+    <div id="footer" class="row">
       <div class="col-12 text-center">
         <p>COOPERATIVA MULTIATIVA DE TRANSPORTE TURISTICO EN EL CORREGIMIENTO DE CORDOBA Y SAN CIPRIANO</p>
       </div>
@@ -399,11 +417,39 @@
   <script src="js/parallax.min.js"></script>
   <script src="js/parallax.js"></script>
   <script src="js/ism-2.2.min.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/in-view.min.js"></script>
   <script src="js/app.js"></script>
 
-  <script>
-    AOS.init();
+  <div id="google_translate_element" class="d-flex d-inline justify-content-end fixed-top"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'en,fr,pt', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element');
+    }
   </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+
+    inView('#typed').once('enter', function () {
+      var texto = "Si aun no quedas satisfecho puedes probar en enviaros un mensaje por nuestros diversos medios de comunicacion:",
+        lista = ["<ol> <li>Formulario de contacto</li> <li>Chat en línea</li> <li>Mensaje de Whatsapp</li> </ol>"];
+
+      new Typed('#typed', {
+        strings: [texto + '<br><br>' + lista],
+        startDelay: 1500,
+        typeSpeed: 20,
+        cursorChar: '_',
+        smartBackspace: false,
+        loop: false,
+      });
+    });
+
+
+  </script>
+
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 

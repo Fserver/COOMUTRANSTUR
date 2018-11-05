@@ -8,20 +8,32 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     html {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     html {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
       }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     html {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
       }
 }
+
+.t1 {font-size: .7rem}
+.t2 {font-size: .8rem}
+.t3 {font-size: .9rem}
+.t4 {font-size: 1.1rem}
+.t5 {font-size: 1.2rem}
+.t6 {font-size: 1.3rem}
+.t7 {font-size: 1.4rem}
+.t8 {font-size: 1.5rem}
+.t9 {font-size: 1.6rem}
+.t10 {font-size: 1.7rem}
+.t11 {font-size: 1.8rem}

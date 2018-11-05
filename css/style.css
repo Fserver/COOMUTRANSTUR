@@ -5,11 +5,23 @@
 @import url("../css/normalize.css");
 @import url("../css/animaciones.css");
 @import url("../css/barra-scroll.css");
+/* Generales ------------------------------------------------------ */
+
+.js div#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: rgba(255, 255, 255, 0.5) url(../img/load.gif) no-repeat center center fixed;
+}
+
 body {
   font-family: "K2D", sans-serif;
-  text-shadow: 1px 1px black;
+  /* text-shadow: 1px 1px black; */
   color: white;
-  /* background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+"); */
 }
 
 h1 h2 h3 h4 h5 h6 {
@@ -18,6 +30,8 @@ h1 h2 h3 h4 h5 h6 {
 
 p {
   margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 i {
@@ -33,34 +47,6 @@ hr {
   height: 12px;
   border: 0;
   box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-}
-
-.title {
-  color: rgba(0, 147, 63, 1);
-  text-shadow: 2px 2px rgb(229, 255, 0);
-  font-size: 2.5rem !important;
-}
-
-.title2 {
-  color: rgba(0, 147, 63, 1);
-  text-shadow: 2px 2px rgb(229, 255, 0);
-  font-size: 1.5rem !important;
-}
-
-.green {
-  color: rgba(0, 147, 63, 1);
-  text-shadow: 2px 2px rgb(229, 255, 0);
-}
-
-.js div#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  background: rgba(255, 255, 255, 0.5) url(../img/load.gif) no-repeat center center fixed;
 }
 
 /* NAVBAR */
@@ -88,9 +74,13 @@ header .bg-nav-menu {
   background-color: rgba(11, 101, 14, 0.5);
 }
 
+.fas.fa-bars {
+  color: white !important;
+}
+
 /* FIN NAVBAR */
 
-/* tamaño del main */
+/* MAIN */
 
 #main {
   height: 100vh;
@@ -144,7 +134,154 @@ header .bg-nav-menu {
   bottom: 25px;
   font-size: 38px;
   color: #fff;
+  animation-duration: 2s;
+  animation-delay: .3s;
 }
+
+/* FIN MAIN */
+
+/* Footer */
+
+#footer {
+  background-color: #315700;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 15px;
+}
+
+.footer {
+  background-color: #008E00;
+}
+
+#footer, .footer i {
+  color: white;
+}
+
+#footer i:hover {
+  color: #FFEE00;
+  transition-duration: 0.3s;
+}
+
+/* FIN Footer */
+
+.title {
+  color: rgba(0, 147, 63, 1);
+  text-shadow: 2px 2px rgb(229, 255, 0);
+  font-size: 2.5rem !important;
+}
+
+.title2 {
+  color: rgba(0, 147, 63, 1);
+  text-shadow: 2px 2px rgb(229, 255, 0);
+  font-size: 2rem !important;
+}
+
+.green {
+  color: rgba(0, 147, 63, 1);
+  text-shadow: 2px 2px rgb(229, 255, 0);
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* FIN Generales */
+
+/* Index.html ------------------------------------------------------ */
+
+/* Biodiversidad index.html */
+
+#biodiversidad {
+  margin-top: 5em;
+  background-color: #212020;
+  padding-bottom: 2em;
+  position: relative;
+  padding-top: 5em;
+}
+
+.cabecita2 {
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  top: -90px;
+}
+
+/* FIN Biodiversidad */
+
+/* Gastronomia index.html*/
+
+#gastronomia {
+  position: relative;
+  background-color: white;
+  margin-bottom: 2em;
+  margin-top: 5em;
+}
+
+#parallax1 {
+  background-image: url(../img/gastronomia.jpg);
+  opacity: .6;
+  background-size: auto 150vh;
+  background-position: center center;
+  height: 400px;
+  position: relative;
+}
+
+.contenido-parallax {
+  top: 0;
+  position: absolute;
+  height: 400px;
+  color: white;
+}
+
+/* FIN Gastronomia */
+
+/* Cultura del paficio index.html */
+
+#cultura {
+  position: relative;
+  background-color: white;
+  margin-bottom: 2em;
+  margin-top: 5em;
+}
+
+#parallax2 {
+  background-image: url(../img/cultura.jpg);
+  opacity: .6;
+  background-size: auto 150vh;
+  background-position: center center;
+  height: 400px;
+  position: relative;
+}
+
+/* FIN Cultura */
+
+#mapa {
+  filter: brightness(0.6);
+  transition-duration: 0.6s;
+  padding-top: 10px !important;
+}
+
+#mapa:hover {
+  transition-duration: 0.6s;
+  filter: brightness(1);
+}
+
+#escrito {
+  min-height: 400px;
+}
+
+#facebook-container {
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 0px solid #000000;
+  background-color: white;
+}
+
+/* END Index.html -------------------------------------------------- */
+
+/* alianzas.html -------------------------------------------------- */
 
 .bg-alainza {
   min-height: 50vh;
@@ -154,35 +291,15 @@ header .bg-nav-menu {
   background-repeat: no-repeat;
 }
 
-.fas.fa-bars {
-  color: white !important;
-}
+/* alianzas.html -------------------------------------------------- */
 
-#servicios {
-  background: rgb(163, 255, 151);
-  /* min-height: 100vh; */
-}
+/* Politica.html -------------------------------------------------- */
 
 #politica {
-  padding-top: 1em;
-  padding-bottom: 15px;
-  /* min-height: 100vh; */
+
 }
 
-#mapa {
-  filter: brightness(0.6);
-  transition-duration: 0.6s;
-}
-
-#mapa:hover {
-  transition-duration: 0.6s;
-  filter: brightness(1);
-}
-
-.row {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
+/* FIN Politica.html -------------------------------------------------- */
 
 .tarjeta {
   -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
@@ -202,9 +319,9 @@ header .bg-nav-menu {
   -moz-border-radius: 15px 15px 15px 15px;
   -webkit-border-radius: 15px 15px 15px 15px;
   border: 3px solid #adadad;
-  background-color: #00933f;
-  margin: 0.5em;
+  background-color: white;
   transition-duration: .3s;
+  height: 400px;
 }
 
 .tarjeta2:hover {
@@ -236,10 +353,10 @@ header .bg-nav-menu {
 }
 
 .carousel-inner img {
-  max-height: 460px;
+  max-height: 350px;
 }
 
-/* Alianzas */
+/* Alianzas.html -------------------------------------------------- */
 
 .alianza {
   border-radius: 10px 10px 10px 10px;
@@ -290,84 +407,71 @@ header .bg-nav-menu {
 }
 
 section>a>img {
+  /* esto controla el tamaño de las imagenes del modal */
   width: 90px;
 }
 
-/* Alianzas END */
-
-/* Biodiversidad */
-
-#biodiversidad {
-  margin-top: 5em;
-  background-color: #212020;
-  padding-bottom: 2em;
-  position: relative;
-  padding-top: 5em;
+.alianza:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px yellow;
+  -moz-box-shadow: 0px 0px 20px 0px yellow;
+  box-shadow: 0px 0px 20px 0px yellow;
+  background-color: rgb(123, 255, 0);
+  transition-duration: .3s;
 }
 
-.cabecita2 {
-  height: 200px;
-  width: auto;
+.alianza:hover h4 {
+  color: rgb(0, 119, 255);
+  text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+/* FIN Alianzas -------------------------------------------------- */
+
+/* nosotros.html --------------------------------------------------*/
+
+#intro {
+  background-image: url(../img/f0680059baac2009af434dcdf67f31ba.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  position: relative;
+  height: 80vh;
+}
+
+#logo-acerca {
+  height: 30vw;
+}
+
+#quienes {
+  height: 100vh;
+  color: black;
+  font-size: 1.3em;
+  position: relative;
+}
+
+#vision {
+  position: relative;
+  height: 50vh;
+  background-color: greenyellow;
+}
+
+#mision {
+  position: relative;
+  height: 50vh;
+  background-color: #FFEF00;
+}
+
+.color {
+  background-color: #0de3fa;
   position: absolute;
-  top: -90px;
+  width: 100%;
+  height: 100%;
 }
 
-/* Biodiversidad END */
-
-/* Gastronomia */
-
-#gastronomia {
-  position: relative;
-  background-color: white;
-  margin-bottom: 2em;
-}
-
-#parallax1 {
-  background-image: url(../img/gastronomia.jpg);
-  opacity: .6;
-  background-size: auto 150vh;
-  background-position: center center;
-  height: 400px;
-  position: relative;
-}
-
-.contenido-parallax {
-  top: 0;
+.color2 {
+  background-color: #009000;
   position: absolute;
-  height: 400px;
-  color: white;
+  width: 100%;
+  height: 100%;
 }
 
-/* Gastronomia END */
-
-/* Footer */
-
-#footer {
-  background-color: #315700;
-  color: white;
-  padding-top: 1em;
-  padding-bottom: 15px;
-}
-
-#footer i {
-  color: #FFEE00;
-}
-
-#footer i:hover {
-  color: white;
-  transition-duration: 0.3s;
-}
-
-/* Footer END */
-
-/* Acerca de  */
-
-.plash {
-  background-color: #45fe00;
-  max-height: 600px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
-  z-index: 0;
-}
-
-/* Acerca de END */
+/* FIN nosotros.html -------------------------------------------------- */
