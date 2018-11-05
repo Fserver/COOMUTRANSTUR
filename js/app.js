@@ -41,8 +41,4 @@ $(function () {
       }
     );
   });
-
-  var scroll = ScrollReveal();
-  // scroll.reveal('.row',{duration: 3000});
-
 });

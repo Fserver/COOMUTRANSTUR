@@ -32,25 +32,3 @@ $color2: rgba(101, 99, 98, 1);
 $color3: rgba(53, 175, 12, 1);
 $color4: rgba(248, 242, 96, 1);
 $color5: rgba(11, 101, 14, 1);
-
-html {
-    font-size: 1rem;
-  }
-  
-  @include media-breakpoint-up(sm) {
-    html {
-      font-size: 1.2rem;
-    }
-  }
-  
-  @include media-breakpoint-up(md) {
-    html {
-      font-size: 1.4rem;
-    }
-  }
-  
-  @include media-breakpoint-up(lg) {
-    html {
-      font-size: 1.6rem;
-    }
-  }
