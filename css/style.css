@@ -22,7 +22,6 @@ body {
   font-family: "K2D", sans-serif;
   text-shadow: 1px 1px black;
   color: white;
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
 }
 
 h1 h2 h3 h4 h5 h6 {
@@ -172,7 +171,7 @@ header .bg-nav-menu {
 .title2 {
   color: rgba(0, 147, 63, 1);
   text-shadow: 2px 2px rgb(229, 255, 0);
-  font-size: 1.5rem !important;
+  font-size: 2rem !important;
 }
 
 .green {
@@ -430,16 +429,16 @@ section>a>img {
 
 /* nosotros.html --------------------------------------------------*/
 
-.plash {
-  background-color: #45fe00;
-  max-height: 600px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
-  z-index: 0;
+#nosotros {
+  background-image: url(../img/f0680059baac2009af434dcdf67f31ba.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  position: relative;
+  height: 80vh;
 }
-
-#logo_acerca {
-  height: 300px;
+#logo-acerca {
+  height: 30vw;
 }
 
 /* FIN nosotros.html -------------------------------------------------- */
