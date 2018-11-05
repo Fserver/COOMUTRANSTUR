@@ -20,7 +20,7 @@
 
 body {
   font-family: "K2D", sans-serif;
-  text-shadow: 1px 1px black;
+  /* text-shadow: 1px 1px black; */
   color: white;
 }
 
@@ -429,7 +429,7 @@ section>a>img {
 
 /* nosotros.html --------------------------------------------------*/
 
-#nosotros {
+#intro {
   background-image: url(../img/f0680059baac2009af434dcdf67f31ba.jpg);
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -439,6 +439,12 @@ section>a>img {
 }
 #logo-acerca {
   height: 30vw;
+}
+#quienes {
+  height: 100vh;
+  background-color: #0de3fa;
+  color: black;
+  font-size: 1.4em;
 }
 
 /* FIN nosotros.html -------------------------------------------------- */
