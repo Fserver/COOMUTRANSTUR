@@ -30,6 +30,8 @@ h1 h2 h3 h4 h5 h6 {
 
 p {
   margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 i {
@@ -277,7 +279,6 @@ header .bg-nav-menu {
   background-color: white;
 }
 
-
 /* END Index.html -------------------------------------------------- */
 
 /* alianzas.html -------------------------------------------------- */
@@ -437,14 +438,25 @@ section>a>img {
   position: relative;
   height: 80vh;
 }
+
 #logo-acerca {
   height: 30vw;
 }
+
 #quienes {
   height: 100vh;
-  background-color: #0de3fa;
   color: black;
   font-size: 1.3em;
+  position: relative;
 }
+
+.color {
+  background-color: #0de3fa;
+  opacity: .5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 
 /* FIN nosotros.html -------------------------------------------------- */
