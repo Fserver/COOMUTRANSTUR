@@ -452,7 +452,12 @@ section>a>img {
 
 .color {
   background-color: #0de3fa;
-  opacity: .5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.color2 {
+  background-color: #009000;
   position: absolute;
   width: 100%;
   height: 100%;
