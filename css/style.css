@@ -5,7 +5,6 @@
 @import url("../css/normalize.css");
 @import url("../css/animaciones.css");
 @import url("../css/barra-scroll.css");
-
 /* Generales ------------------------------------------------------ */
 
 .js div#preloader {
@@ -480,3 +479,17 @@ section>a>img {
 }
 
 /* FIN nosotros.html -------------------------------------------------- */
+
+/* Turismo --------------------------------------------- */
+
+#img_intro_turismo {
+  position: relative;
+  z-index: -1;
+  top: -60px;
+  background-color: green;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+  height: 50vh;
+}
+
+/* Turismo --------------------------------------------- */
