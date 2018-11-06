@@ -428,6 +428,8 @@ section>a>img {
 
 #logo-acerca {
   height: 30vw;
+  min-width: 250px;
+  min-height: 250px;
 }
 
 #quienes {
