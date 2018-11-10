@@ -22,7 +22,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     html {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
       }
 }
 

@@ -66,7 +66,7 @@ header a:hover {
 }
 
 header .navbar-brand {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -163,13 +163,13 @@ header .bg-nav-menu {
 .title {
   color: rgba(0, 147, 63, 1);
   text-shadow: 2px 2px rgb(229, 255, 0);
-  font-size: 2.5rem !important;
+  font-size: 2rem !important;
 }
 
 .title2 {
   color: rgba(0, 147, 63, 1);
   text-shadow: 2px 2px rgb(229, 255, 0);
-  font-size: 2rem !important;
+  font-size: 1.7rem !important;
 }
 
 .green {
