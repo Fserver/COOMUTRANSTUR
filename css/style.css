@@ -485,11 +485,46 @@ section>a>img {
 #img_intro_turismo {
   position: relative;
   z-index: -1;
-  top: -60px;
-  background-color: green;
+  background: url(../img/bg1.jpg);
+  background-position: center center;
+  background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
   height: 50vh;
+}
+
+#main_turismo {
+  position: relative;
+  background-color: black;
+  color: #009100;
+  opacity: .8;
+  height: 50vh;
+}
+
+#contenido_turismo {
+  position: relative;
+  color: black;
+}
+
+.img_adaptada {
+  object-fit: cover;
+  height: 200px;
+  width: 300px;
+  filter: blur(2px);
+  opacity: .7;
+  transition-duration: .5s;
+  margin: 5px auto;
+}
+
+.img_adaptada:hover {
+  filter: blur(0px);
+  opacity: 1;
+  transition-duration: .5s;
+}
+#fondo_turismo_img{
+  position: relative;
+  height: 10px;
+  opacity: 1;
 }
 
 /* Turismo --------------------------------------------- */

@@ -18,54 +18,55 @@
 <body>
     <!-- INDEX -->
     <section class="container-fluid pl-0 pr-0">
-        <div class="">
+        <header class="">
             <div class="">
-                <header class="">
-                    <div class="">
-                        <!-- menu -->
-                        <nav class="row navbar navbar-expand-sm bg-white">
-                            <div class="col">
-                                <a class="navbar-brand ml-3 text-green d-none d-sm-block" href="index.html"><span class="title font-weight-bold">Coomutranstur</span><br></a>
-                                <a class="navbar-brand ml-3 text-green d-block d-sm-none" href="index.html"><span class="title2 font-weight-bold">Coomutranstur</span><br></a>
-                            </div>
-                            <div class="col d-none d-md-inline-block">
-                                <ul class="navbar-nav mt-2 float-right">
-                                    <li class="nav-item">
-                                        <a href="https://www.facebook.com/coomutranstur/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="https://www.instagram.com/coomutranstur/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="https://twitter.com/coomutranstur" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                        <nav class="row navbar navbar-expand-lg bg-nav-menu">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                                ria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon">
-                                    <i class="fas fa-bars"></i>
-                                </span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                                <ul class="navbar-nav mt-2 mt-lg-0 mr-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="turismo.html">Guía turística</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Nosotros</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="alianzas.html">Alianzas Estratégicas</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
+                <!-- menu -->
+                <nav class="row navbar navbar-expand-sm bg-white">
+                    <div class="col">
+                        <a class="navbar-brand ml-3 text-green d-none d-sm-block" href="index.html"><span class="title font-weight-bold">Coomutranstur</span><br></a>
+                        <a class="navbar-brand ml-3 text-green d-block d-sm-none" href="index.html"><span class="title2 font-weight-bold">Coomutranstur</span><br></a>
                     </div>
-                </header>
-                <!-- texto main -->
+                    <div class="col d-none d-md-inline-block">
+                        <ul class="navbar-nav mt-2 float-right">
+                            <li class="nav-item">
+                                <a href="https://www.facebook.com/coomutranstur/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.instagram.com/coomutranstur/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://twitter.com/coomutranstur" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav class="row navbar navbar-expand-lg bg-nav-menu">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                        ria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mt-2 mt-lg-0 mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="turismo.html">Guía turística</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="politica.html">Política de Calidad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="alianzas.html">Alianzas Estratégicas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- texto main -->
     </section>
 
     <div id="intro" class="container-fluid d-flex align-items-center justify-content-center">
@@ -283,7 +284,7 @@
 
     <!-- Scripts -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/app.js"></script>
 
@@ -300,7 +301,7 @@
             // clipRelativeInput: true
         });
         parallaxInstance.invert(false, false);
-        parallaxInstance.limit (30, 1000);
+        parallaxInstance.limit(30, 1000);
 
     </script>
 </body>
