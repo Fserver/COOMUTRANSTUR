@@ -347,7 +347,6 @@ header .bg-nav-menu {
   color: rgba(255, 236, 2, 1);
 }
 
-
 .au {
   /* Son los iconos de servicios que ofrece el establecimiento comercial */
   /* Esta vaina es de los elementos "<i>" de alianza.html */
@@ -372,7 +371,7 @@ section>a>img {
   cursor: pointer;
 }
 
-section>a>img:hover{
+section>a>img:hover {
   filter: blur(2px);
   opacity: .7;
   transition-duration: .5s;
@@ -487,24 +486,19 @@ section>a>img:hover{
 
 .img_adaptada {
   object-fit: cover;
-  height: 200px !important;
-  width: 300px !important;
-  filter: blur(2px);
+  height: 150px !important;
+  width: 250px !important;
+  filter: blur(1.2px);
   opacity: .7;
   transition-duration: .5s;
-  margin: 5px auto;
+  margin: 10px auto;
 }
 
 .img_adaptada:hover {
   filter: blur(0px);
   opacity: 1;
   transition-duration: .5s;
-}
-
-#fondo_turismo_img {
-  position: relative;
-  height: 10px;
-  opacity: 1;
+  transform: scale(1.1);
 }
 
 /* Turismo --------------------------------------------- */
