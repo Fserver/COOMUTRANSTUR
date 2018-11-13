@@ -363,7 +363,19 @@ header .bg-nav-menu {
 
 section>a>img {
   /* esto controla el tamaño de las imagenes del modal */
-  width: 90px;
+  object-fit: cover;
+  width: 130px;
+  height: 130px !important;
+  filter: blur(0px);
+  opacity: 1;
+  transition-duration: .5s;
+  cursor: pointer;
+}
+
+section>a>img:hover{
+  filter: blur(2px);
+  opacity: .7;
+  transition-duration: .5s;
 }
 
 .alianza:hover {
