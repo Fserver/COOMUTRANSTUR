@@ -127,7 +127,7 @@
 
     <section class="mt-4 mb-4">
         <div class="container-fluid pl-0 pr-0">
-            <div class="row d-flex justify-content-around">
+            <div id="elemento1" class="row d-flex justify-content-around">
                 <img src="img/bg1.jpg" alt="" class="img_adaptada lazy">
                 <img src="img/bg2.jpg" alt="" class="img_adaptada lazy">
                 <img src="img/bg3.jpg" alt="" class="img_adaptada lazy">
@@ -139,7 +139,6 @@
 
             </div>
         </div>
-        <div id="fondo_turismo_img"></div>
     </section>
 
     <!-- Footer  -->
@@ -166,11 +165,22 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.lazy.min.js"></script>
-    <script src="js/carga.js"></script>
+    <!-- <script src="js/carga.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/holder.js"></script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="js/app.js"></script>
+
+    <script>
+        inView('#elemento1').once('enter', function () {
+            $('.lazy').lazy({
+                placeholder: "data:img/load.gif;",
+                threshold: 0,
+                visibleOnly: true
+            });
+        }
+        });
+    </script>
 
 </body>
 
