@@ -42,3 +42,7 @@ $(function () {
     );
   });
 });
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'en,fr,pt', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element');
+}
