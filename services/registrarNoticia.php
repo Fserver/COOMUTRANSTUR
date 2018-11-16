@@ -2,7 +2,7 @@
 session_start();
 $json = array();
 
-if(!isset($_SESSION['perfil'])){
+if(!isset($_SESSION['perfil']) || $_SESSION["rol"] != "administrador"){
     $json["rpta"] = "err"; 
     echo json_encode($json, JSON_UNESCAPED_UNICODE);    
     die();

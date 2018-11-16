@@ -1,9 +1,8 @@
 <?php
     session_start();
-if(!isset($_SESSION['perfil']) || $_SESSION["rol"] != "administrador"){
-    header('Location: ../autenticacion.php');
-}
-
+    if(!isset($_SESSION['perfil']) || $_SESSION["rol"] != "manager"){
+        header('Location: ../autenticacion.php');
+    }
 
     $nombres = $_SESSION['nombres'];
 ?>
@@ -17,10 +16,10 @@ if(!isset($_SESSION['perfil']) || $_SESSION["rol"] != "administrador"){
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Noticias
+                    Administradores
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="./noticias.php">Administrar Noticias</a>
+                    <a class="dropdown-item" href="./gestion-administradores.php">Gestionar Administradores</a>
                 </div>
             </li>
 
@@ -28,7 +27,6 @@ if(!isset($_SESSION['perfil']) || $_SESSION["rol"] != "administrador"){
                 <a class="nav-link" href="../services/cerrar-sesion.php" id="" role="button">
                     Cerrar sesión <b>(<?= $nombres ?>)</b>
                 </a>
-
             </li>
         </ul>
     </div>

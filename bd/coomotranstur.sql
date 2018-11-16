@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-11-2018 a las 16:07:41
+-- Tiempo de generación: 16-11-2018 a las 23:19:45
 -- Versión del servidor: 10.1.34-MariaDB
 -- Versión de PHP: 7.2.7
 
@@ -57,7 +57,7 @@ CREATE TABLE `perfil` (
 --
 
 INSERT INTO `perfil` (`idperfil`, `usuario`, `rol`, `estado`, `fecha_registro`) VALUES
-(1, 1, 1, 'activo', '2018-11-15 16:59:33');
+(2, 2, 2, 'activo', '2018-11-16 15:17:20');
 
 -- --------------------------------------------------------
 
@@ -76,7 +76,8 @@ CREATE TABLE `rol` (
 --
 
 INSERT INTO `rol` (`idrol`, `nombre`, `estado`) VALUES
-(1, 'administrador', 'activo');
+(1, 'administrador', 'activo'),
+(2, 'manager', 'activo');
 
 -- --------------------------------------------------------
 
@@ -100,7 +101,7 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`idusuario`, `nombres`, `apellidos`, `cedula`, `correo`, `password`, `fecha_registro`, `estado`) VALUES
-(1, 'Mario', 'Micolta', '1111799530', 'mariomicolta@hotmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '2018-11-15 16:56:22', 'activo');
+(2, 'manager', 'manager', '123', 'manager@hotmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '2018-11-16 15:16:02', 'activo');
 
 --
 -- Índices para tablas volcadas
@@ -151,19 +152,19 @@ ALTER TABLE `noticia`
 -- AUTO_INCREMENT de la tabla `perfil`
 --
 ALTER TABLE `perfil`
-  MODIFY `idperfil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idperfil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `rol`
 --
 ALTER TABLE `rol`
-  MODIFY `idrol` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idrol` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Restricciones para tablas volcadas
