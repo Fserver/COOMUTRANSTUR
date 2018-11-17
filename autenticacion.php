@@ -1,10 +1,17 @@
 <?php
 session_start();
 
-if(isset($_SESSION['perfil'])){
-    header('Location: admin/index.php');
+if(isset($_SESSION['perfil']) || isset($_SESSION['rol']) ){
+    if($_SESSION['rol'] === "administrado"){
+        header('Location: admin/index.php');
+    }else
+    if($_SESSION['rol'] === "manager"){
+        header('Location: manager/index.php');
+    }
+    // header('Location: admin/index.php');
     // die();
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
