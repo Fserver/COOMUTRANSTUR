@@ -1,6 +1,6 @@
 $(function () {
 
-  const host = "localhost";
+  const host = "www.coomutranstur.com";
 
   jQuery(document).ready(function ($) {
     // site preloader -- also uncomment the div in the header and the css style for #preloader
@@ -11,7 +11,7 @@ $(function () {
     });
   });
 
-  (function (w, d, v3) { w.chaportConfig = { appId: '5babec7cb3796d1c348a5cd1' }; if (w.chaport) return; v3 = w.chaport = {}; v3._q = []; v3._l = {}; v3.q = function () { v3._q.push(arguments) }; v3.on = function (e, fn) { if (!v3._l[e]) v3._l[e] = []; v3._l[e].push(fn) }; var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://app.chaport.com/javascripts/insert.js'; var ss = d.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss) })(window, document);
+  (function (w, d, v3) { w.chaportConfig = { appId: '5babec7cb3796d1c348a5cd1' }; if (w.chaport) return; v3 = w.chaport = {}; v3._q = []; v3._l = {}; v3.q = function () { v3._q.push(arguments) }; v3.on = function (e, fn) { if (!v3._l[e]) v3._l[e] = []; v3._l[e].push(fn) }; var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'httpss://app.chaport.com/javascripts/insert.js'; var ss = d.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss) })(window, document);
 
 
   //flecha abajo
@@ -75,13 +75,13 @@ $(function () {
        $('#form-noticia').css("opacity","");
        if(response.rpta == true){
          alert("Registro exitoso");
-         location.href ="http://"+host+"/fserver.github.io/admin/noticias.php";
+         location.href ="https://"+host+"/admin/noticias.php";
        }else
        if(response.rpta == false){
          alert("No se pudo registrar");
        }
        if(response.rpta === "err"){
-         location.href ="http://"+host+"/fserver.github.io/autenticacion.php";
+         location.href ="https://"+host+"/autenticacion.php";
        }
      }
    });
@@ -117,13 +117,13 @@ $(function () {
        $('#sbmButton').attr("disabled",false);
        if(response.rpta == true){
          alert("Edición exitosa");
-         location.href ="http://"+host+"/fserver.github.io/admin/noticias.php";
+         location.href ="https://"+host+"/admin/noticias.php";
        }else
        if(response.rpta == false){
          alert("No se pudo editar");
        }
        if(response.rpta === "err"){
-         location.href ="http://"+host+"/fserver.github.io/autenticacion.php";
+         location.href ="https://"+host+"/autenticacion.php";
        }
      }
    });
@@ -157,7 +157,7 @@ $(function () {
      dataType: "JSON",
      success: function (response) {
        if(response.rpta == true){
-         location.href ="http://"+host+"/fserver.github.io/admin/noticias.php";
+         location.href ="https://"+host+"/admin/noticias.php";
        }else
        if(response.rpta == false){
          alert("Ocurrió un error. Comunícate con el administrador del sistema.");
@@ -186,14 +186,14 @@ $(function () {
         $('#form-administrador').css("opacity","");
         if(response.rpta == true){
           alert("Registro exitoso");
-          location.href ="http://"+host+"/fserver.github.io/manager/gestion-administradores.php";
+          location.href ="https://"+host+"/manager/gestion-administradores.php";
         }else
         if(response.rpta == false){
           alert("No se pudo registrar");
           $('#sbmButton').attr("disabled",false);
         }
         if(response.rpta === "err"){
-          location.href ="http://"+host+"/fserver.github.io/autenticacion.php";
+          location.href ="https://"+host+"/autenticacion.php";
         }
       }
     });
@@ -217,13 +217,13 @@ $(function () {
         // $('#sbmButton').attr("disabled",false);
         if(response.rpta == true){
           alert("Edición exitosa");
-          location.href ="http://"+host+"/fserver.github.io/manager/gestion-administradores.php";
+          location.href ="https://"+host+"/manager/gestion-administradores.php";
         }else
         if(response.rpta == false){
           alert("No se pudo editar");
         }
         if(response.rpta === "err"){
-          location.href ="http://"+host+"/fserver.github.io/autenticacion.php";
+          location.href ="https://"+host+"/autenticacion.php";
         }
       }
     });
