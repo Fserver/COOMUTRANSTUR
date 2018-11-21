@@ -516,7 +516,7 @@ section>a>img:hover {
   filter: blur(1.2px);
   opacity: .7;
   transition-duration: .5s;
-  margin: 10px auto;
+  margin: 0;
 }
 
 .img_adaptada:hover {
@@ -528,6 +528,21 @@ section>a>img:hover {
 
 /* Turismo --------------------------------------------- */
 
+/* Gastroomia */
+
+.gastronomy {
+  min-height: 100%;
+  min-width: 100%;
+  background-image: url(../img/gastronomia/fondo.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.tarjeta5 {
+  background-color: rgba(255, 255, 255, 0.623);
+  border-radius: 3px;
+}
 
 
 
