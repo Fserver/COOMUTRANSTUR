@@ -69,13 +69,14 @@
 
     <main class="text-dark">
         <section>
-            <div class="container-fluid pt-4 pb-2 mb-4 bg-white">
+            <div id="info_gastronomy" class="container-fluid pt-4 pb-2 mb-4 bg-white">
                 <div class="d-flex align-items-center justify-content-center">
                     <div class="container row">
                         <div class="col-12 text-center">
 
                             <h3 class="title">Gastronomia del pacífico</h3>
-                            <p class="text-justify">La gastronomía de la región Pacífica de Colombia está basada sobre todo en
+                            <p class="text-justify">La gastronomía de la región Pacífica de Colombia está basada sobre
+                                todo en
                                 pescados y mariscos, debido a la cercanía de la zona al mar.
 
                                 Es reconocida por muchos expertos en la alta cocina y por la opinión general de los
@@ -139,7 +140,7 @@
 
         <section class="mt-4 mb-4">
             <div class="container-fluid pl-0 pr-0">
-                <div id="elemento1" class="row d-flex justify-content-center">
+                <div class="galery_container row d-flex justify-content-center">
 
                     <img src="img/gastronomia/IMG-20181120-WA0008.jpg" alt="" srcset="" class="img_adaptada lazy">
                     <img src="img/gastronomia/IMG_20180916_125145.jpg" alt="" srcset="" class="img_adaptada lazy">
@@ -188,4 +189,15 @@
     <script src="js/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="js/app.js"></script>
+
+    <script>
+        inView('.galery_container').once('enter', function () {
+            $('.lazy').lazy({
+                placeholder: "data:img/load.gif;",
+                threshold: 0,
+                visibleOnly: true
+            });
+        });
+    </script>
+
 </body>

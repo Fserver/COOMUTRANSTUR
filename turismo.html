@@ -127,7 +127,7 @@
 
     <section class="mt-4 mb-4">
         <div class="container-fluid pl-0 pr-0">
-            <div id="elemento1" class="row d-flex justify-content-center">
+            <div class="galery_container row d-flex justify-content-center">
 
                 <img src="https://picsum.photos/300" alt="" srcset="" class="img_adaptada lazy">
                 <img src="https://picsum.photos/400" alt="" srcset="" class="img_adaptada lazy">
@@ -175,7 +175,7 @@
     <script src="js/app.js"></script>
 
     <script>
-        inView('#elemento1').once('enter', function () {
+        inView('.galery_container').once('enter', function () {
             $('.lazy').lazy({
                 placeholder: "data:img/load.gif;",
                 threshold: 0,
