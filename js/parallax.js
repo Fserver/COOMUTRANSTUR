@@ -20,5 +20,6 @@ function parallax() {
   }
 
   parallaxBg('#parallax1, #parallax2', .1);
+  parallaxBg('.turismo', .05);
   // parallaxFront('.page',.4);
 }
