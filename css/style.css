@@ -422,14 +422,16 @@ section>a>img:hover {
 /* FIN Alianzas -------------------------------------------------- */
 
 /* nosotros.html --------------------------------------------------*/
-
-#intro {
+.nosotros{
   background-image: url(../img/f0680059baac2009af434dcdf67f31ba.jpg);
+  background-color: #0DE3FA;
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
+}
+#intro {
+  height: 85vh;
   position: relative;
-  height: 80vh;
 }
 
 #logo-acerca {
