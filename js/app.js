@@ -27,7 +27,7 @@ $(function () {
   });
 
   //botón servicios -->#link-servicios
-  $(".navbar-nav li a").on("click", function (event) {
+  $(".navbar-nav li a, .btn-contacto").on("click", function (event) {
     // event.preventDefault();-------------------------------Esto me generaba el error de que no me cambia de pagina xD
     var hash = this.hash; //obtiene la ruta #..
     $("html, body").animate(
