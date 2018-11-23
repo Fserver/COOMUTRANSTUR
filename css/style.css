@@ -422,13 +422,15 @@ section>a>img:hover {
 /* FIN Alianzas -------------------------------------------------- */
 
 /* nosotros.html --------------------------------------------------*/
-.nosotros{
+
+.nosotros {
   background-image: url(../img/f0680059baac2009af434dcdf67f31ba.jpg);
   background-color: #0DE3FA;
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
 }
+
 #intro {
   height: 85vh;
   position: relative;
@@ -457,6 +459,12 @@ section>a>img:hover {
   position: relative;
   height: 50vh;
   background-color: #FFEF00;
+}
+
+#directivos {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
 }
 
 .color {
