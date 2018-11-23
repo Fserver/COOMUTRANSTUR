@@ -12,7 +12,7 @@ $(function () {
   });
 
   //flecha abajo
-  $(".tarjeta6").on("click", function (event) {
+  $(".tarjeta6, .flecha-abajo a").on("click", function (event) {
     event.preventDefault();
     var hash = this.hash; //obtiene la ruta #..
     $("html, body").animate(
