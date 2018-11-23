@@ -91,6 +91,7 @@ hr {
   text-shadow: 3px 3px 10px rgb(0, 0, 0);
   padding: 1em 0.3em;
   margin-bottom: 1em;
+  max-width: 1000px;
 }
 
 /* NAVBAR */
@@ -245,6 +246,12 @@ header .bg-nav-menu {
   background-repeat: no-repeat;
   background-position: center;
   height: 543px;
+}
+
+.fb-comments {
+  background-color: #f8f9fa !important;
+  border-radius: 5px;
+  max-width: 400px !important;
 }
 
 /* Biodiversidad index.html */
