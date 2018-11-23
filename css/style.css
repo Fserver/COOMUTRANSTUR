@@ -431,10 +431,10 @@ section>a>img:hover {
 /* nosotros.html --------------------------------------------------*/
 
 .nosotros {
-  background-image: url(../img/f0680059baac2009af434dcdf67f31ba.jpg);
+  background-image: url(../img/nosotros/nosotros.jpg);
   background-color: #0DE3FA;
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -472,6 +472,22 @@ section>a>img:hover {
   position: relative;
   background-size: cover;
   background-position: center center;
+}
+
+.img_adaptada2 {
+  object-fit: cover;
+  height: 200px !important;
+  width: 150px !important;
+  transition-duration: .5s;
+  margin: auto;
+  border: solid white 2px;
+}
+
+.img_adaptada2:hover {
+  filter: blur(0px);
+  opacity: 1;
+  transition-duration: .5s;
+  transform: scale(1.1);
 }
 
 .color {
