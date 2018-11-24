@@ -43,9 +43,7 @@ $(function () {
 
 
  /* ADMINISTRADOR */
- myDataTable("myTable");
 
- myDataTableManager("myTableManager");
 
  /**WYSiWYG */
 
@@ -229,44 +227,54 @@ $(function () {
 
   /**MANAGER */
 
+
+  /**NEWS */
+
+  $(document).on("keyup", "#input-search", function(){
+    var suggestions = $("#search-suggestions");
+    suggestions.html("");
+    var value = $(this).val();
+    var data = {
+      "search" : value
+    }
+    $.ajax({
+      type: "POST",
+      url: "../services/api-search-news.php",
+      data: data,
+      dataType: "JSON",
+      success: function (response) {
+        if(response.rpta == true){
+          $.each(response, function (i, valor) { 
+            if(valor.titulo != undefined){
+              suggestions.append('<option label="'+valor.titulo+'" value="'+valor.titulo+'" data-id="'+valor.idnoticia+'">');
+            }
+          });
+        }
+      }
+    });
+  });
+
+
+  $(document).on("input", "#input-search", function (e) {
+    // e.preventDefault();
+    var userText = $(this).val();
+      $("#search-suggestions").find("option").each(function() {
+        if ($(this).val() === userText) {
+          if($(this).val() != ""){
+            var id = $(this).data("id");
+            location.href ="https://"+host+"/news/noticia.php?id="+id;
+          }
+        }
+      });
+    
+  });
+
+
+   /**NEWS */
+   
 });
 
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'en,fr,pt', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element');
 }
 
-function myDataTable(id){
-  $('#'+id+'').DataTable({
-    "aLengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "TODOS"]],
-    "language": {
-        "lengthMenu": "Mostrar _MENU_ noticias por página",
-        "zeroRecords": "No hay noticias disponibles",
-        "info": "Mostrando página _PAGE_ de _PAGES_",
-        "infoEmpty": "No hay noticias disponibles",
-        "infoFiltered": "(filtro de _MAX_ total de noticias)",
-        "search": "Buscar noticias:",
-        "paginate": {
-           "previous": "Anterior",
-            "next": "Siguiente"
-        }
-    },
-});
-}
-
-function myDataTableManager(id){
-  $('#'+id+'').DataTable({
-    "aLengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "TODOS"]],
-    "language": {
-        "lengthMenu": "Mostrar _MENU_ administradores por página",
-        "zeroRecords": "No hay administradores disponibles",
-        "info": "Mostrando página _PAGE_ de _PAGES_",
-        "infoEmpty": "No hay administradores disponibles",
-        "infoFiltered": "(filtro de _MAX_ total de administradores)",
-        "search": "Buscar administradores:",
-        "paginate": {
-           "previous": "Anterior",
-            "next": "Siguiente"
-        }
-    },
-});
-}

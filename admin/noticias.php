@@ -1,7 +1,8 @@
 <?php
+require('../services/utils.php');
     include "../services/conexion.php"; 
     $con = conectar(); 
-    $sql = "SELECT idnoticia, titulo, contenido, fecha_registro, estado FROM noticia;";
+    $sql = "SELECT idnoticia, titulo, contenido, fecha_registro, estado FROM noticia ORDER BY estado DESC;";
     $noticias = $con->query($sql); 
 ?>
 <!DOCTYPE html>
@@ -11,13 +12,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Administrador</title>
+  <link rel="icon" type="image/png" href="../img/logo.png" />
+
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/datatables.min.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <?= include "nav-admin.php" ?>
         <div id="main">
             <div class="row mt-3">
@@ -45,8 +48,8 @@
                                     ?>
                                     <tr>
                                         <td><?= $i ?></td>
-                                        <td><?= $noticia["titulo"] ?></td>
-                                        <td><?= $noticia["fecha_registro"] ?></td>
+                                        <td><?= cortar_string($noticia["contenido"], 30) ?></td>
+                                        <td><?= fechaCastellano($noticia["fecha_registro"]) ?></td>
                                         <td><?= $noticia["estado"] ?></td>
                                         <td>
                                             <a href="detalle-noticia.php?idnoticia=<?= $noticia["idnoticia"] ?>" id="" data-noticia="<?= $noticia["idnoticia"] ?>"><i class="fas fa-eye"></i></a>
@@ -71,6 +74,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/datatables.min.js"></script>
+    <script src="../js/myDataTable.js"></script>
     <script src="../js/app.js"></script>
 
 </body>

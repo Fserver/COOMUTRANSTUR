@@ -669,3 +669,15 @@ section>a>img:hover {
   max-height: 100px; */
   /* object-fit: cover */
 }
+
+#lista-noticias{
+  background-color: #e8e8e8;
+}
+
+/*Opaco la imagen*/
+.img-carousel-index{
+  height: 300px !important;
+  background-color: rgba(0,0,0,0.8);
+  filter:brightness(0.4);
+
+}

@@ -1,3 +1,15 @@
+<?php
+
+include "./services/conexion.php"; 
+require('./services/utils.php');
+
+$con = conectar(); 
+//consultamos las últimas 3 noticias
+$sql = "SELECT idnoticia, titulo, contenido, fecha_registro, imagen FROM noticia WHERE estado = 'aprobada' ORDER BY fecha_registro DESC LIMIT 3;";
+$noticias = $con->query($sql); 
+// $noticia = $result->fetch_assoc();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -141,6 +153,55 @@
 
         <div class="col col-sm-12 col-lg-8 col-xl-8 tarjeta2 mb-4">
           <h3 class="green">Noticias</h3>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+              <?php
+              $i = true;
+              foreach($noticias as $noticia){ 
+                if($i){
+              ?>
+                <div class="carousel-item active">
+                  <!-- <img class="d-block w-100 pb-3 " data-src="holder.js/900x300?auto=yes"> -->
+                  <img src="./img/uploads/<?= $noticia["imagen"] ?>" class="d-block w-100 pb-3 img-carousel-index" alt="">
+                  <div class="carousel-caption d-none d-md-block img-carousel">
+                    <a href="./news/noticia.php?id=<?= $noticia["idnoticia"] ?>"><h5><?= cortar_string($noticia["titulo"], 300) ?></h5></a>
+                    <p><?= cortar_string($noticia["contenido"], 30) ?></p>
+                  </div>
+                </div>  
+              <?php
+                }else{
+              ?>
+                <div class="carousel-item">
+                  <!-- <img class="d-block w-100 pb-3 " data-src="holder.js/900x300?auto=yes"> -->
+                  <img src="./img/uploads/<?= $noticia["imagen"] ?>" class="d-block w-100 pb-3 img-carousel-index" alt="">
+                  <div class="carousel-caption d-none d-md-block img-carousel">
+                    <a href="./news/noticia.php?id=<?= $noticia["idnoticia"] ?>"><h5><?= cortar_string($noticia["titulo"], 300) ?></h5></a>
+                    <p><?= cortar_string($noticia["contenido"], 30) ?></p>
+                  </div>
+                </div>
+              <?php
+                }
+              ?>
+              <?php
+              $i = false;
+              }
+              ?>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+              </div>
+              <a href="./news/index.php">Ver todas las noticias</a>
 
           <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">

@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Manager</title>
+  <link rel="icon" type="image/png" href="../img/logo.png" />
+
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/datatables.min.css">
@@ -76,6 +78,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/datatables.min.js"></script>
+    <script src="../js/myDataTable.js"></script>
     <script src="../js/app.js"></script>
 
 </body>
