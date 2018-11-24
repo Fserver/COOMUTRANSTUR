@@ -14,12 +14,8 @@
     $carta .= "Telefono: $telefono \n";
     $carta .= "Mensaje: $mensaje";
 
-    $headers = "From: admin@coomutranstur.com\r\n";
-
     // Enviando Mensaje
-    mail($destinatario, $asunto, $carta, $headers);
+    mail($destinatario, $asunto, $carta);
     header('Location:/index.html');
-
-    echo "Mail Sent.";
 
 ?>
