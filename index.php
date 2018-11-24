@@ -444,6 +444,20 @@ $noticias = $con->query($sql);
   </section>
 
 
+  <section>
+    <div>
+      <h3>Apoyo institucional:</h3>
+
+      <div class="galery_container row d-flex justify-content-center">
+        <img class="img_adaptada lazy" src="img/sena.png" alt="">
+        <img class="img_adaptada lazy" src="img/escudo.png" alt="">
+
+      </div>
+
+    </div>
+  </section>
+
+
 
 
 
