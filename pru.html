@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <input type="checkbox" id="op1" value="restaurante" checked>  e1<br>
+    <input type="checkbox" id="op2" value="hospedaje" checked>  e2<br>
+    <input type="checkbox" id="op3" value="flotadores" checked>  e3<br>
+
+
+    <div class="e1 e2">
+        <p> 1y2</p>
+    </div>
+    <div class="e1">
+        <p> 1</p>
+    </div>
+    <div class="e2 e3">
+        <p> 2y3</p>
+    </div>
+    <div class="e2">
+        <p> 2</p>
+    </div>
+    <div class="e3">
+        <p> 3</p>
+    </div>
+    <div class="e3">
+        <p> 3</p>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $("input").click(function (e) {
+                var x1 = document.getElementsByClassName("e1");
+                $(x1).css("display", "none");
+                
+                var x2 = document.getElementsByClassName("e2");
+                $(x2).css("display", "none");
+                var x3 = document.getElementsByClassName("e3");
+                $(x3).css("display", "none");
+                
+            if ($('#op1').prop('checked')) {
+                var x1 = document.getElementsByClassName("e1");
+                $(x1).css("display", "inline");
+            } if ($('#op2').prop('checked')) {
+                var x2 = document.getElementsByClassName("e2");
+                $(x2).css("display", "inline");
+            } if ($('#op3').prop('checked')) {
+                var x3 = document.getElementsByClassName("e3");
+                $(x3).css("display", "inline");
+            }
+        });
+    </script>
+</body>
+
+</html>
