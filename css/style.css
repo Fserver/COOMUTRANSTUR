@@ -415,6 +415,7 @@ section>a>img {
   opacity: 1;
   transition-duration: .5s;
   cursor: pointer;
+  margin: 3px auto;
 }
 
 section>a>img:hover {
