@@ -632,6 +632,13 @@ section>a>img:hover {
   transform: scale(1.1);
 }
 
+.tarjeta1 {
+  background-color: rgba(255, 255, 255, 0.068);
+  border-radius: 15px;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
 /* Turismo --------------------------------------------- */
 
 /* Gastroomia */
@@ -671,14 +678,14 @@ section>a>img:hover {
   /* object-fit: cover */
 }
 
-#lista-noticias{
+#lista-noticias {
   background-color: #e8e8e8;
 }
 
 /*Opaco la imagen*/
-.img-carousel-index{
-  height: 300px !important;
-  background-color: rgba(0,0,0,0.8);
-  filter:brightness(0.4);
 
+.img-carousel-index {
+  height: 300px !important;
+  background-color: rgba(0, 0, 0, 0.8);
+  filter: brightness(0.4);
 }
