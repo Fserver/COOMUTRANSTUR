@@ -1,12 +1,12 @@
 <?php
 
-include "./services/conexion.php"; 
+include "./services/conexion.php";
 require('./services/utils.php');
 
-$con = conectar(); 
+$con      = conectar();
 //consultamos las últimas 3 noticias
-$sql = "SELECT idnoticia, titulo, contenido, fecha_registro, imagen FROM noticia WHERE estado = 'aprobada' ORDER BY fecha_registro DESC LIMIT 3;";
-$noticias = $con->query($sql); 
+$sql      = "SELECT idnoticia, titulo, contenido, fecha_registro, imagen FROM noticia WHERE estado = 'aprobada' ORDER BY fecha_registro DESC LIMIT 3;";
+$noticias = $con->query($sql);
 // $noticia = $result->fetch_assoc();
 ?>
 
@@ -162,11 +162,11 @@ $noticias = $con->query($sql);
               </ol>
               <div class="carousel-inner">
               <?php
-              $i = true;
-              foreach($noticias as $noticia){ 
-                if($i){
-              ?>
-                <div class="carousel-item active">
+$i = true;
+foreach ($noticias as $noticia) {
+    if ($i) {
+?>
+               <div class="carousel-item active">
                   <!-- <img class="d-block w-100 pb-3 " data-src="holder.js/900x300?auto=yes"> -->
                   <img src="./img/uploads/<?= $noticia["imagen"] ?>" class="d-block w-100 pb-3 img-carousel-index" alt="">
                   <div class="carousel-caption d-none d-md-block img-carousel">
@@ -175,9 +175,9 @@ $noticias = $con->query($sql);
                   </div>
                 </div>  
               <?php
-                }else{
-              ?>
-                <div class="carousel-item">
+    } else {
+?>
+               <div class="carousel-item">
                   <!-- <img class="d-block w-100 pb-3 " data-src="holder.js/900x300?auto=yes"> -->
                   <img src="./img/uploads/<?= $noticia["imagen"] ?>" class="d-block w-100 pb-3 img-carousel-index" alt="">
                   <div class="carousel-caption d-none d-md-block img-carousel">
@@ -186,13 +186,13 @@ $noticias = $con->query($sql);
                   </div>
                 </div>
               <?php
-                }
-              ?>
-              <?php
-              $i = false;
-              }
-              ?>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    }
+?>
+             <?php
+    $i = false;
+}
+?>
+             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Anterior</span>
               </a>
@@ -202,45 +202,7 @@ $noticias = $con->query($sql);
               </a>
               </div>
               <a href="./news/index.php">Ver todas las noticias</a>
-
-          <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100 pb-3 " data-src="holder.js/300x300?auto=yes">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Noticia 1</h5>
-                  <p>El evento numero 1 en...</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 pb-3 " data-src="holder.js/300x300?auto=yes">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Noticia 2</h5>
-                  <p>El evento numero 2 en...</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 pb-3 " data-src="holder.js/300x300?auto=yes">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Noticia 3</h5>
-                  <p>El evento numero 3 en...</p>
-                </div>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div> -->
+</div>
 
         </div>
 
