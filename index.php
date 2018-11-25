@@ -75,16 +75,16 @@ $noticias = $con->query($sql);
               <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mt-2 mt-lg-0 mr-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="turismo.html">Guía turística</a>
+                    <a class="nav-link" href="turismo">Guía turística</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="acerca.html">Nosotros</a>
+                    <a class="nav-link" href="acerca">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="alianzas.html">Alianzas Estratégicas</a>
+                    <a class="nav-link" href="alianzas">Alianzas Estratégicas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contáctenos</a>
+                    <a class="nav-link" href="#!">Angeles Inversores</a>
                   </li>
                 </ul>
               </div>
