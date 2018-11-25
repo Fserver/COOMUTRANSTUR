@@ -663,6 +663,16 @@ section>a>img:hover {
   border-radius: 3px;
 }
 
+.cultura {
+  min-height: 100%;
+  min-width: 100%;
+  background-image: url(../img/cultura/3.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 /**AMDMINISTRADOR*/
 
 /**NOTICIAS*/
