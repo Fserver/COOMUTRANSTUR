@@ -20,7 +20,7 @@ $noticia = $result->fetch_assoc();
   <link rel="stylesheet" href="../css/datatables.min.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="text-dark">
     <div class="container-fluid">
         <?= include "nav-admin.php" ?>
         <nav aria-label="breadcrumb">
