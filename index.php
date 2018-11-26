@@ -376,7 +376,7 @@ foreach ($noticias as $noticia) {
                 <form class="form-horizontal" role="form" action="contactform.php" method="POST">
                   <fieldset>
                     <legend class="text-center header title2">Formulario de Contacto</legend>
-
+                    <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
                     <div class="form-group">
                       <input required id="fname" name="name" type="text" placeholder="Nombre completo" class="form-control">
                     </div>
@@ -396,7 +396,12 @@ foreach ($noticias as $noticia) {
 
                     <div class="form-group">
                       <div class="text-center">
-                        <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                        <button type="submit" class="btn btn-success btn-lg" id="btn-contact">Enviar</button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="text-center">
+                      <span id="rptaContact" class="text-dark"></span>
                       </div>
                     </div>
                   </fieldset>

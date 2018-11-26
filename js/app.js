@@ -287,7 +287,76 @@ $(function () {
 
   /**NEWS */
 
-});
+     /**FORMULARIO CONTACTO */
+
+
+   
+     $(document).on('submit', '#form-contacto', function (e) {
+      e.preventDefault();
+  
+      grecaptcha.ready(function() {
+        formContacto();
+  
+      });
+  
+     });
+     /**FORMULARIO CONTACTO */
+
+}); //FIN READY
+
+
+async function formContacto(){
+
+  const span_msg = $("#rptaContact");
+
+  try{
+
+    await grecaptcha.execute('6LfZ_XwUAAAAAH1B7CAUoVgMcctrgSNqRmbJHoQL', {action: 'homepage'})
+    .then(function(token) {
+      document.getElementById("g-recaptcha-response").value = token;
+    });
+
+    const data = new FormData(document.getElementById('form-contacto'));
+
+    var config = { 
+      method: 'POST',
+      body: data
+    };
+
+    inactivarSubmit();
+    let response = await fetch('services/contactform.php', config);
+    let res  = await response.json();
+
+    span_msg.html(res.msg);  
+    setTimeout(function(){
+      span_msg.html("");
+    }, 3000);
+
+    // document.getElementById("rptaContact").innerHTML = res.msg;
+
+  }catch(Error){
+    console.log("errorr__"+ Error);
+    span_msg.html("No se pudo enviar el formulario.");  
+  }
+  activarSubmit();
+}
+
+
+
+function activarSubmit(){
+  $("#btn-contact").attr('disabled', false);
+  $("#btn-contact").addClass('button button-block');
+}
+
+function inactivarSubmit(){
+  $("#btn-contact").attr('disabled', true);
+  $("#btn-contact").removeClass('button button-block');
+}
+
+
+
+
+
 
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'en,fr,pt', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element');
