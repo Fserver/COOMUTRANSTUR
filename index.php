@@ -86,6 +86,10 @@ $noticias = $con->query($sql);
                   <li class="nav-item">
                     <a class="nav-link" href="#!">Angeles Inversores</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="educacion">Educación y formación ciudadana</a>
+                  </li>
+
                 </ul>
               </div>
             </nav>
