@@ -133,7 +133,7 @@ $noticias = $con->query($sql);
         <div class="col-12 col-md-6 text-center m-auto">
           <h2 class="title">Córdoba - San Cipriano</h2>
           <p>Amir Murber</p>
-          <p>Joven emprendedor de la zona.</p>
+          <p>Joven Etno-emprendedor del territorio.</p>
         </div>
 
         <div class="col-12 col-md-6">
@@ -442,7 +442,7 @@ foreach ($noticias as $noticia) {
             (57) 3148340811 <br>
             (57) 3148302152 <br>
             (57) 3155777327 <br>
-            <span><small>Lunes a viernes de 8am-6pm</small></span>
+            <span><small>Todos los dias de 6:00 - 18:00</small></span>
           </div>
 
           <div class="w-100">
@@ -452,7 +452,7 @@ foreach ($noticias as $noticia) {
             <i class="fas fa-envelope fa-2x align-self-center mr-1"></i>
           </div>
           <div class="col">
-            www.coomutranstur@hotmail.com
+          directivoscoomutranstur@gmail.com
           </div>
         </div>
       </div>
@@ -467,7 +467,7 @@ foreach ($noticias as $noticia) {
 
     <div id="footer" class="row">
       <div class="col-12 text-center">
-        <p>COOPERATIVA MULTIATIVA DE TRANSPORTE TURISTICO EN EL CORREGIMIENTO DE CORDOBA Y SAN CIPRIANO</p>
+        <p>COOPERATIVA MULTIACTIVA DE TRANSPORTE TURISTICO EN EL CORREGIMIENTO DE CORDOBA Y SAN CIPRIANO</p>
       </div>
       <div class="col-12 text-center">
         <p>Buenaventura / Valle del Cauca / Colombia</p>
