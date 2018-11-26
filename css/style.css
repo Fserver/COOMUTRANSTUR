@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=K2D");
 @import url("../css/bootstrap.min.css");
 @import url("../css/font-size.css");
-@import url("../css/normalize.css");
+/* @import url("../css/normalize.css"); */
 @import url("../css/animaciones.css");
 @import url("../css/barra-scroll.css");
 /* Generales ------------------------------------------------------ */
@@ -684,4 +684,28 @@ section>a>img:hover {
 .img-carousel-index:hover {
   filter: brightness(.3);
   transition-duration: .4s;
+}
+
+.card-educacion1{
+  background-color: #0090006e;
+}
+
+.card-educacion2{
+  background-color: rgb(229, 255, 0, 0.3);
+}
+
+.card-educacion3{
+  background-color: #e8e8e86e;
+}
+
+.line
+{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 0;
+    border-top: 0px;
+    height: 4px;
+    width: 80px;
+    background-color: #009000;
+
 }

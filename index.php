@@ -28,6 +28,8 @@ $noticias = $con->query($sql);
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <script src='https://www.google.com/recaptcha/api.js?render=6LfZ_XwUAAAAAH1B7CAUoVgMcctrgSNqRmbJHoQL'></script>
+
 </head>
 
 <!-- <div class="js"> -->
