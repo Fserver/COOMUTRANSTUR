@@ -311,6 +311,10 @@ async function formContacto(){
     let response = await fetch('services/contactform.php', config);
     let res  = await response.json();
 
+    if(res.rpta == true){
+      $("#form-contacto")[0].reset();
+    }
+    
     span_msg.html(res.msg);  
     setTimeout(function(){
       span_msg.html("");

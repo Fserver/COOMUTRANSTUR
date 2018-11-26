@@ -20,7 +20,7 @@
 <body class="text-dark">
     <div class="container-fluid">
         <?= include "nav-manager.php" ?>
-        <div id="main">
+        <div>
             <div class="row mt-3">
                 <div class="col-12">
                     <div class="card noticias">

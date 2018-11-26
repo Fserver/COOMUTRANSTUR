@@ -21,7 +21,7 @@
                 <li class="breadcrumb-item active" aria-current="page">Registrar Nuevo Administrador</li>
             </ol>
         </nav>
-        <div id="main">
+        <div>
             <form id="form-administrador" class="text-dark">
                 <div class="form-group">
                     <label for="">Nombres</label>

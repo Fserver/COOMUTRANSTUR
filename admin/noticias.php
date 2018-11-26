@@ -21,7 +21,7 @@ require('../services/utils.php');
 <body class="text-dark">
     <div class="container-fluid">
         <?= include "nav-admin.php" ?>
-        <div id="main">
+        <div>
             <div class="row mt-3">
                 <div class="col-12">
                     <div class="card noticias">

@@ -29,7 +29,8 @@ $noticia = $result->fetch_assoc();
 
     <title>COOMUSTRANSTUR</title>
 
-
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -111,7 +112,9 @@ $noticia = $result->fetch_assoc();
     <section class="mt-4 mb-4">
         <div class="container-fluid pl-0 pr-0">
             <div id="elemento1" class="row d-flex justify-content-center">
-                <img src="../img/uploads/<?=  $noticia["imagen"] ?>" class="img_adaptada2 lazy swipebox">
+                <a href="#" data-featherlight="../img/uploads/<?=$noticia["imagen"]?>">
+                    <img src="../img/uploads/<?=  $noticia["imagen"] ?>" class="img_adaptada2 lazy"  id="mylightbox">
+                </a> 
             </div>
         </div>
     </section>
@@ -119,6 +122,10 @@ $noticia = $result->fetch_assoc();
 
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript"
+    charset="utf-8"></script>
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.gallery.min.js" type="text/javascript"
+    charset="utf-8"></script>
     <script src="../js/app.js"></script>
 
 </body>

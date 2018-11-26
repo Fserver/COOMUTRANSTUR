@@ -32,7 +32,7 @@ $administrador = $result->fetch_assoc();
         </nav>
             <h3 class="text-dark">Editar administrador</h3>
         <hr>
-        <div id="main">
+        <div>
             <form id="form-editar-administrador" class="text-dark">
                 <input type="hidden" name="idusuario" value="<?= $administrador["idusuario"] ?>">
                 <div class="form-group">

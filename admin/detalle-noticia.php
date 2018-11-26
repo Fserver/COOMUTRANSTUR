@@ -75,7 +75,7 @@ $noticia = $result->fetch_assoc();
             </div>
         </div>
         <hr>
-        <div id="main" class="noticias">
+        <div class="noticias">
             <div class="row">
                 <div class="col-12">
                     <img src="../img/uploads/<?= $noticia["imagen"] ?>" class="img-fluid" alt="Responsive image">

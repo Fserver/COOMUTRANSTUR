@@ -14,7 +14,7 @@
 <body>
     <div class="container-fluid">
         <?= include "nav-admin.php" ?>
-        <div id="main">
+        <div>
             <div class="row">
                 <div class="col-12">
                     <p class="lead text-center text-dark display-4">

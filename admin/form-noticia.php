@@ -21,7 +21,7 @@
                 <li class="breadcrumb-item active" aria-current="page">Registrar Nueva Noticia</li>
             </ol>
         </nav>
-        <div id="main">
+        <div>
             <form id="form-noticia" class="text-dark" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="">Título</label>

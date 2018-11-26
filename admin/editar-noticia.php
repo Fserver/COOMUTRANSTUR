@@ -32,7 +32,7 @@ $noticia = $result->fetch_assoc();
         </nav>
             <h3 class="text-dark">Editar noticia</h3>
         <hr>
-        <div id="main">
+        <div>
             <form id="form-editar-noticia" class="text-dark" enctype="multipart/form-data">
                 <input type="hidden" name="id" value="<?= $noticia["idnoticia"] ?>">
                 <input type="hidden" name="nombreImagen" value="<?= $noticia["imagen"] ?>">

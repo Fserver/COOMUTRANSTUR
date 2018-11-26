@@ -19,10 +19,12 @@ $noticias = $con->query($sql);
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <meta property="fb:app_id" content="642215239509270" />
+  <meta name="Coomutranstur" content=" Empresa líder en ecoturismo a sancipriano ">
+
 
   <link rel="icon" type="image/png" href="img/logo.png" />
 
-  <title>COOMUSTRANSTUR</title>
+  <title>COOMUTRANSTUR</title>
 
   <link rel="stylesheet" href="css/my-slider.css" />
   <link rel="stylesheet" href="css/aos.css">
