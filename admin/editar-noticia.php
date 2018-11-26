@@ -16,7 +16,6 @@ $noticia = $result->fetch_assoc();
   <title>Editar noticia</title>
   <link rel="icon" type="image/png" href="../img/logo.png" />
 
-  <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/datatables.min.css">
   <link rel="stylesheet" href="../css/style.css">
@@ -49,7 +48,7 @@ $noticia = $result->fetch_assoc();
                 <div class="row pl-0 pr-0">
                     <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <img src="../img/uploads/<?= $noticia["imagen"] ?>" class="img-fluid myImage" alt="">
+                            <img src="../img/uploads/<?= $noticia["imagen"] ?>" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
@@ -71,7 +70,6 @@ $noticia = $result->fetch_assoc();
     </div>
 
 
-    <?= include "footer-admin.php" ?>
               
     <!-- SCRIPTS -->
     <script src="../js/jquery.min.js"></script>

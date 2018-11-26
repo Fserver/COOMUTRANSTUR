@@ -16,7 +16,6 @@ $administrador = $result->fetch_assoc();
   <title>Editar administrador</title>
   <link rel="icon" type="image/png" href="../img/logo.png" />
 
-  <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/datatables.min.css">
   <link rel="stylesheet" href="../css/style.css">
@@ -85,7 +84,6 @@ $administrador = $result->fetch_assoc();
     </div>
 
 
-    <?= include "footer-manager.php" ?>
               
     <!-- SCRIPTS -->
     <script src="../js/jquery.min.js"></script>

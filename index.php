@@ -162,7 +162,7 @@ $noticias = $con->query($sql);
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
               </ol>
               <div class="carousel-inner">
               <?php
@@ -172,8 +172,8 @@ foreach ($noticias as $noticia) {
 ?>
                <div class="carousel-item active">
                   <!-- <img class="d-block w-100 pb-3 " data-src="holder.js/900x300?auto=yes"> -->
-                  <img src="./img/uploads/<?= $noticia["imagen"] ?>" class="d-block w-100 pb-3 img-carousel-index" alt="">
-                  <div class="carousel-caption d-none d-md-block img-carousel">
+                  <img src="./img/uploads/<?= $noticia["imagen"] ?>" class="d-block pb-3 img-fluid img-carousel-index" alt="">
+                  <div class="carousel-caption d-md-block img-carousel">
                     <a href="./news/noticia.php?id=<?= $noticia["idnoticia"] ?>"><h5><?= cortar_string($noticia["titulo"], 300) ?></h5></a>
                     <p><?= cortar_string($noticia["contenido"], 30) ?></p>
                   </div>
@@ -183,8 +183,8 @@ foreach ($noticias as $noticia) {
 ?>
                <div class="carousel-item">
                   <!-- <img class="d-block w-100 pb-3 " data-src="holder.js/900x300?auto=yes"> -->
-                  <img src="./img/uploads/<?= $noticia["imagen"] ?>" class="d-block w-100 pb-3 img-carousel-index" alt="">
-                  <div class="carousel-caption d-none d-md-block img-carousel">
+                  <img src="./img/uploads/<?= $noticia["imagen"] ?>" class="d-block pb-3 img-fluid img-carousel-index" alt="">
+                  <div class="carousel-caption d-md-block img-carousel">
                     <a href="./news/noticia.php?id=<?= $noticia["idnoticia"] ?>"><h5><?= cortar_string($noticia["titulo"], 300) ?></h5></a>
                     <p><?= cortar_string($noticia["contenido"], 30) ?></p>
                   </div>

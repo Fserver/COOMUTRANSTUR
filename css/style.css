@@ -72,15 +72,6 @@ hr {
   height: 450px;
 }
 
-.tarjeta2:hover {
-  -webkit-box-shadow: 0px 0px 52px -14px rgba(0, 238, 255, 1);
-  -moz-box-shadow: 0px 0px 52px -14px rgba(0, 238, 255, 1);
-  box-shadow: 0px 0px 52px -14px rgba(0, 238, 255, 1);
-  border: 3px solid #cccccc28;
-  background-color: #06E0FA;
-  transition-duration: .3s;
-}
-
 .tarjeta3 {
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
@@ -189,6 +180,7 @@ header .bg-nav-menu {
 /* Footer */
 
 #footer {
+  position: relative;
   background-color: white;
   color: black !important;
   padding-top: 1em;
@@ -675,27 +667,21 @@ section>a>img:hover {
 
 /**AMDMINISTRADOR*/
 
-/**NOTICIAS*/
-
-.noticias {
-  color: #000 !important;
-  text-align: center;
-}
-
-.myImage {
-  /* max-width: 100px;
-  max-height: 100px; */
-  /* object-fit: cover */
-}
-
-#lista-noticias {
-  background-color: #e8e8e8;
-}
-
 /*Opaco la imagen*/
 
 .img-carousel-index {
-  height: 300px !important;
-  background-color: rgba(0, 0, 0, 0.8);
-  filter: brightness(0.4);
+  height: 400px;
+  width: 100%;
+  background-position: center center;
+  /* object-fit: cover; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  filter: brightness(1);
+  transition-duration: .4s;
+}
+
+.img-carousel-index:hover {
+  filter: brightness(.3);
+  transition-duration: .4s;
 }

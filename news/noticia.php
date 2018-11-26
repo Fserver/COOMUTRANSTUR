@@ -34,18 +34,6 @@ $noticia = $result->fetch_assoc();
 
 </head>
 
-<style>
-    img.lazy {
-        width: 700px; 
-        height: 467px; 
-        display: block;
-
-        background-image: url("../img/load.gif");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-    }
-</style>
-
 <body>
     <!-- INDEX -->
     <section class="container-fluid pl-0 pr-0">
@@ -128,49 +116,11 @@ $noticia = $result->fetch_assoc();
         </div>
     </section>
 
-    <!-- Footer  -->
-    <div id="footer" class="row bg-light">
-        <div class="col-12 text-center">
-            <p>COOPERATIVA MULTIATIVA DE TRANSPORTE TURISTICO EN EL CORREGIMIENTO DE CORDOBA Y SAN CIPRIANO</p>
-        </div>
-        <div class="col-12 text-center">
-            <p>Buenaventura / Valle del Cauca / Colombia</p>
-        </div>
-        <div class="col-6 d-flex align-items-center justify-content-end">
-            <p class="d-inline">
-                <em>NIT: 830.500.789-9</em>
-            </p>
-        </div>
-        <div class="col-6 d-flex align-items-center justify-content-start">
-            <span style="font-size: 2em;">
-                <a href="https://www.facebook.com/coomutranstur/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/coomutranstur/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/coomutranstur" target="_blank"><i class="fab fa-twitter-square"></i></a>
-            </span>
-        </div>
-    </div>
 
-    <div id="google_translate_element" class="d-flex d-inline justify-content-end fixed-top"></div>
-
-    <script src="../js/chaport.js"></script>
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/jquery.lazy.min.js"></script>
-    <!-- <script src="../js/carga.js"></script> -->
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/holder.js"></script>
-    <script src="../js/in-view.min.js"></script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="../js/app.js"></script>
 
-    <script>
-        inView('#elemento1').once('enter', function () {
-            $('.lazy').lazy({
-                placeholder: "data:img/load.gif;",
-                threshold: 0,
-                visibleOnly: true
-            });
-        });
-</script>
 </body>
 
 </html>

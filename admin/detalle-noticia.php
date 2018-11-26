@@ -16,7 +16,6 @@ $noticia = $result->fetch_assoc();
   <title>Administrador</title>
   <link rel="icon" type="image/png" href="../img/logo.png" />
 
-  <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/datatables.min.css">
   <link rel="stylesheet" href="../css/style.css">
@@ -72,15 +71,14 @@ $noticia = $result->fetch_assoc();
 
             </div>
             <div class="col-12 col-md-10 text-dark">
-                Información de guía para aprobar una noticia (que aparezca en la web) o cancelarla. Se supone que las noticias aprobadas por x o y son las que deben salir. Esto srive para poder visualizar la noticia antes de mostrarla al público. bla bla....
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio vel, commodi cumque voluptatibus ratione sapiente blanditiis odio quis, eaque assumenda veniam debitis. Autem, natus dolorem! Quos iste voluptate temporibus facilis, impedit sunt magnam iusto id accusantium fuga. Pariatur velit quas, dolor animi error magni quibusdam iure nostrum ex distinctio fugit! </p>
+                Información de guía para aprobar una noticia (que aparezca en la web) o cancelarla. Se supone que las noticias aprobadas por x o y son las que deben salir. Esto srive para poder visualizar la noticia antes de mostrarla al público.</p>
             </div>
         </div>
         <hr>
         <div id="main" class="noticias">
             <div class="row">
                 <div class="col-12">
-                    <img src="../img/uploads/<?= $noticia["imagen"] ?>" class="img-fluid myImage" alt="Responsive image">
+                    <img src="../img/uploads/<?= $noticia["imagen"] ?>" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
             <div class="row">
@@ -95,9 +93,6 @@ $noticia = $result->fetch_assoc();
             </div>
         </div>
     </div>
-
-
-    <?= include "footer-admin.php" ?>
               
     <!-- SCRIPTS -->
     <script src="../js/jquery.min.js"></script>

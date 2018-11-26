@@ -14,12 +14,11 @@ require('../services/utils.php');
   <title>Administrador</title>
   <link rel="icon" type="image/png" href="../img/logo.png" />
 
-  <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/datatables.min.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="text-dark">
     <div class="container-fluid">
         <?= include "nav-admin.php" ?>
         <div id="main">
