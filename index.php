@@ -373,7 +373,7 @@ foreach ($noticias as $noticia) {
           <div class="tarjeta row">
             <div class="col-md-12">
               <div class="well well-sm">
-                <form class="form-horizontal" role="form" action="contactform.php" method="POST">
+                <form id="form-contacto" class="form-horizontal" role="form">
                   <fieldset>
                     <legend class="text-center header title2">Formulario de Contacto</legend>
                     <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
