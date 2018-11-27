@@ -19,13 +19,6 @@
       }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    html {
-        font-size: 1.3rem;
-      }
-}
-
 .t1 {font-size: .7rem}
 .t2 {font-size: .8rem}
 .t3 {font-size: .9rem}
