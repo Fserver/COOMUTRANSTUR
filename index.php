@@ -139,11 +139,9 @@ $noticias = $con->query($sql);
           <p>Amir Murber</p>
           <p>Joven Etno-emprendedor del territorio.</p>
         </div>
-
         <div class="col-12 col-md-6">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.facebook.com/amirmurber/videos/1571424506274779/?story_fbid=1571446176272612&id=100002217334823" allowfullscreen></iframe>
-          </div>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=ip4Sg84vBzA" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -240,7 +238,7 @@ foreach ($noticias as $noticia) {
         </div>
         <div class="w-100"></div>
         <div class="col mb-3">
-          <div class="fb-comments float-right" data-href="https://www.facebook.com/coomutranstur/" data-width="400px"
+        <div class="fb-comments float-right" data-href="https://www.facebook.com/coomutranstur/" data-width="400px"
             data-height="400" data-numposts="5"></div>
         </div>
         <div class="col mb-3">
@@ -255,10 +253,8 @@ foreach ($noticias as $noticia) {
 
     <section id="biodiversidad">
       <div class="container-fluid p-0">
-        <div class="d-flex justify-content-center">
-          <img class="cabecita2 d-none d-sm-block" src="img/index/biodiversidad.png" alt="">
-        </div>
-        <div class="row text-center justify-content-around">
+
+      <div class="row text-center justify-content-around mt-5">
 
           <div class="col-12 mb-3 text-center title font-weight-bold">
             <p class="text-uppercase">Rincón de Biodiversidad en el Pacífico Colombiano</p>
