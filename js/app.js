@@ -347,6 +347,5 @@ function inactivarSubmit(){
 
 
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'en,fr,pt', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element');
+  new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'de,en,fr,it,nl,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }
-
