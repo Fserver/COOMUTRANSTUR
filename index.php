@@ -141,7 +141,9 @@ $noticias = $con->query($sql);
         </div>
 
         <div class="col-12 col-md-6">
-          <video  class="img-fluid" id="video_index" src="video/AMIR MURBER.MP4" allowfullscreen controls autoplay></video>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.facebook.com/amirmurber/videos/1571424506274779/?story_fbid=1571446176272612&id=100002217334823" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -174,7 +176,7 @@ $i = true;
 foreach ($noticias as $noticia) {
     if ($i) {
 ?>
-               <div class="carousel-item active">
+             <div class="carousel-item active">
                   <!-- <img class="d-block w-100 pb-3 " data-src="holder.js/900x300?auto=yes"> -->
                   <img src="./img/uploads/<?= $noticia["imagen"] ?>" class="d-block pb-3 img-fluid img-carousel-index" alt="">
                   <div class="carousel-caption d-md-block img-carousel">
@@ -185,7 +187,7 @@ foreach ($noticias as $noticia) {
               <?php
     } else {
 ?>
-               <div class="carousel-item">
+             <div class="carousel-item">
                   <!-- <img class="d-block w-100 pb-3 " data-src="holder.js/900x300?auto=yes"> -->
                   <img src="./img/uploads/<?= $noticia["imagen"] ?>" class="d-block pb-3 img-fluid img-carousel-index" alt="">
                   <div class="carousel-caption d-md-block img-carousel">
@@ -196,11 +198,11 @@ foreach ($noticias as $noticia) {
               <?php
     }
 ?>
-             <?php
+           <?php
     $i = false;
 }
 ?>
-             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Anterior</span>
               </a>
@@ -418,24 +420,16 @@ foreach ($noticias as $noticia) {
     </div>
   </section>
 
+  <section class="container-fluid mb-4">
+    <div class="tarjeta">
+      <h3 class="title text-center">Apoyo institucional:</h3>
 
-  <section>
-    <div>
-      <h3>Apoyo institucional:</h3>
-
-      <div class="galery_container row d-flex justify-content-center">
-        <img class="img_adaptada lazy" src="img/sena.png" alt="">
-        <img class="img_adaptada lazy" src="img/escudo.png" alt="">
-
+      <div class="w-100 d-flex justify-content-center">
+        <img class="img-fluid" src="img/index/acompañantes.jpg" alt="">
       </div>
 
     </div>
   </section>
-
-
-
-
-
 
   <!-- Footer  -->
   <section class="footer">
