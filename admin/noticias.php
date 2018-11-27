@@ -19,7 +19,7 @@ require('../services/utils.php');
 </head>
 <body class="text-dark">
     <div class="container-fluid">
-        <?= include "nav-admin.php" ?>
+        <?php "nav-admin.php" ?>
         <div>
             <div class="row mt-3">
                 <div class="col-12">

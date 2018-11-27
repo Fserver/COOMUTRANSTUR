@@ -30,7 +30,7 @@ $noticia = $result->fetch_assoc();
     <title>COOMUSTRANSTUR</title>
 
     <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
-    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />
+    <!-- <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -119,13 +119,38 @@ $noticia = $result->fetch_assoc();
         </div>
     </section>
 
+    <!-- Footer  -->
+    <div id="footer" class="row">
+        <div class="col-12 text-center">
+            <p>COOPERATIVA MULTIACTIVA DE TRANSPORTE TURISTICO EN EL CORREGIMIENTO DE CORDOBA Y SAN CIPRIANO</p>
+        </div>
+        <div class="col-12 text-center">
+            <p>Buenaventura / Valle del Cauca / Colombia</p>
+        </div>
+        <div class="col-6 d-flex align-items-center justify-content-end">
+            <p class="d-inline">
+                <em>NIT: 830.500.789-9</em>
+            </p>
+        </div>
+        <div class="col-6 d-flex align-items-center justify-content-start">
+            <span style="font-size: 2em;">
+                <a href="https://www.facebook.com/coomutranstur/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/coomutranstur/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/coomutranstur" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            </span>
+        </div>
+    </div>
+
+    <div id="google_translate_element" class="d-flex d-inline justify-content-end fixed-top"></div>
+
 
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript"
-    charset="utf-8"></script>
+        charset="utf-8"></script>
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.gallery.min.js" type="text/javascript"
-    charset="utf-8"></script>
+        charset="utf-8"></script>
     <script src="../js/app.js"></script>
 
 </body>

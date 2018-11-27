@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <?= include "nav-manager.php" ?>
+        <?php "nav-manager.php" ?>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.php">Inicio</a></li>
