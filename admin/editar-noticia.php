@@ -16,7 +16,6 @@ $noticia = $result->fetch_assoc();
   <title>Editar noticia</title>
   <link rel="icon" type="image/png" href="../img/logo.png" />
 
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/datatables.min.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>

@@ -88,7 +88,7 @@ $noticias = $con->query($sql);
                     <a class="nav-link" href="alianzas">Alianzas Estratégicas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#!">Angeles Inversores</a>
+                    <a class="nav-link" href="angeles">Angeles Inversores</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="educacion">Educación y formación ciudadana</a>

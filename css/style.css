@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=K2D");
 @import url("../css/bootstrap.min.css");
 @import url("../css/font-size.css");
-/* @import url("../css/normalize.css"); */
+@import url("../css/normalize.css");
 @import url("../css/animaciones.css");
 @import url("../css/barra-scroll.css");
 /* Generales ------------------------------------------------------ */
@@ -20,7 +20,6 @@
 
 body {
   font-family: "K2D", sans-serif;
-  /* text-shadow: 1px 1px black; */
   color: white;
 }
 
@@ -47,6 +46,10 @@ hr {
   height: 12px;
   border: 0;
   box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron{
+  background-color: #52ff5740;
 }
 
 .tarjeta {
@@ -532,7 +535,6 @@ section>a>img:hover {
   background-position: center center;
   background-size: cover;
   background-repeat: repeat-y;
-  /* background-attachment: fixed; */
 }
 
 .tarjeta6 {
