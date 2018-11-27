@@ -151,7 +151,7 @@ $noticias = $con->query($sql);
   <main>
     <section id="noticias" class="container-fluid">
 
-      <div class="row text-centet">
+      <div class="row justify-content-center">
 
         <div class="col-12">
           <div class="col mb-3 text-center title font-weight-bold">
@@ -159,7 +159,7 @@ $noticias = $con->query($sql);
           </div>
         </div>
 
-        <div class="col col-sm-12 col-lg-8 col-xl-8 tarjeta2 mb-4">
+        <div class="col col-sm-10 col-lg-6 col-xl-6 tarjeta2 mb-4">
           <a class="float-right" href="./news/index.php">Ver todas las noticias</a>
           <h3 class="green">Noticias</h3>
 

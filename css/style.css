@@ -672,7 +672,7 @@ section>a>img:hover {
 /*Opaco la imagen*/
 
 .img-carousel-index {
-  max-height: 300px;
+  height: 300px;
   width: 100%;
   background-position: center center;
   /* object-fit: cover; */
