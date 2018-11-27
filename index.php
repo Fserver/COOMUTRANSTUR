@@ -141,7 +141,8 @@ $noticias = $con->query($sql);
         </div>
         <div class="col-12 col-md-6">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=ip4Sg84vBzA" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ip4Sg84vBzA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -175,7 +176,7 @@ $i = true;
 foreach ($noticias as $noticia) {
     if ($i) {
 ?>
-             <div class="carousel-item active">
+            <div class="carousel-item active">
                   <!-- <img class="d-block w-100 pb-3 " data-src="holder.js/900x300?auto=yes"> -->
                   <img src="./img/uploads/<?= $noticia["imagen"] ?>" class="d-block w-100 img-carousel-index" alt="">
                   <div class="carousel-caption d-md-block img-carousel">
@@ -186,7 +187,7 @@ foreach ($noticias as $noticia) {
               <?php
     } else {
 ?>
-             <div class="carousel-item">
+            <div class="carousel-item">
                   <!-- <img class="d-block w-100 pb-3 " data-src="holder.js/900x300?auto=yes"> -->
                   <img src="./img/uploads/<?= $noticia["imagen"] ?>" class="d-block w-100 img-carousel-index" alt="">
                   <div class="carousel-caption d-md-block img-carousel">
@@ -197,11 +198,11 @@ foreach ($noticias as $noticia) {
               <?php
     }
 ?>
-           <?php
+          <?php
     $i = false;
 }
 ?>
-           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Anterior</span>
               </a>
