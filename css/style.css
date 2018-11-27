@@ -72,7 +72,7 @@ hr {
   border: 1px solid #adadad;
   background-color: white;
   transition-duration: .3s;
-  height: 450px;
+  padding-bottom: 10px;
 }
 
 .tarjeta3 {
@@ -672,19 +672,19 @@ section>a>img:hover {
 /*Opaco la imagen*/
 
 .img-carousel-index {
-  height: 400px;
+  max-height: 300px;
   width: 100%;
   background-position: center center;
   /* object-fit: cover; */
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
-  filter: brightness(1);
+  filter: brightness(.3);
   transition-duration: .4s;
 }
 
 .img-carousel-index:hover {
-  filter: brightness(.3);
+  filter: brightness(1);
   transition-duration: .4s;
 }
 
