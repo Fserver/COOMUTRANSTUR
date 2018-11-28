@@ -166,8 +166,8 @@ $noticias = $con->query($sql);
 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li> -->
+                <!-- <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> -->
                 <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
               </ol>
               <div class="carousel-inner">
@@ -265,19 +265,19 @@ foreach ($noticias as $noticia) {
 
             <div class="ism-slider" data-transition_type="zoom" data-interval="3000" id="my-slider">
               <ol>
-                <li>
+                <!-- <li>
                   <img src="img/index/biodiversidad/img1.jpg">
                   <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
-                </li>
+                </li>  -->
                 <li>
                   <img src="img/index/biodiversidad/img2.jpg">
                 </li>
-                <li>
+                <!-- <li>
                   <img src="img/index/biodiversidad/img3.jpg">
                 </li>
                 <li>
                   <img src="img/index/biodiversidad/img4.jpg">
-                </li>
+                </li> -->
               </ol>
             </div>
           </div>
@@ -418,11 +418,14 @@ foreach ($noticias as $noticia) {
   </section>
 
   <section class="container-fluid mb-4">
-    <div class="tarjeta">
-      <h3 class="title text-center">Apoyo institucional:</h3>
-
-      <div class="w-100 d-flex justify-content-center">
-        <img class="img-fluid" src="img/index/acompañantes.jpg" alt="">
+    <div class="row">
+      <div class="col-12 col-sm-6 d-flex align-items-center justify-content-center">
+        <h3 class="title text-center">Apoyos institucionales:</h3>
+      </div>
+      <div class="col">
+        <div class="w-100 d-flex align-items-center justify-content-center">
+          <img class="img-fluid" src="img/index/acompañantes.jpg" alt="">
+        </div>
       </div>
 
     </div>
