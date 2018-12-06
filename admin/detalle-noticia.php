@@ -21,8 +21,8 @@ $noticia = $result->fetch_assoc();
 </head>
 <body class="text-dark">
     <div class="container-fluid">
-        <?php "nav-admin.php" ?>
-        <nav aria-label="breadcrumb">
+        <?php include "nav-admin.php" ?>
+        <nav aria-label="breadcrumb" class="mt-2">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.php">Inicio</a></li>
                 <li class="breadcrumb-item"><a href="./noticias.php">Noticias</a></li>
@@ -81,13 +81,15 @@ $noticia = $result->fetch_assoc();
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 text center">
+                <div class="col-12 text-center">
                     <h1><?= $noticia["titulo"] ?></h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <?= $noticia["contenido"] ?>
+                    <pre>
+                        <?= $noticia["contenido"] ?>
+                    </pre>
                 </div>
             </div>
         </div>

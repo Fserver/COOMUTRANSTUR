@@ -18,7 +18,7 @@
 </head>
 <body class="text-dark">
     <div class="container-fluid">
-        <?php "nav-manager.php" ?>
+        <?php include "nav-manager.php" ?>
         <div>
             <div class="row mt-3">
                 <div class="col-12">

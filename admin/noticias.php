@@ -19,7 +19,7 @@ require('../services/utils.php');
 </head>
 <body class="text-dark">
     <div class="container-fluid">
-        <?php "nav-admin.php" ?>
+        <?php include "nav-admin.php" ?>
         <div>
             <div class="row mt-3">
                 <div class="col-12">
@@ -46,7 +46,7 @@ require('../services/utils.php');
                                     ?>
                                     <tr>
                                         <td><?= $i ?></td>
-                                        <td><?= cortar_string($noticia["contenido"], 30) ?></td>
+                                        <td><?= cortar_string($noticia["titulo"], 30) ?></td>
                                         <td><?= fechaCastellano($noticia["fecha_registro"]) ?></td>
                                         <td><?= $noticia["estado"] ?></td>
                                         <td>

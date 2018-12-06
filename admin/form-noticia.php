@@ -9,11 +9,12 @@
 
   <link rel="stylesheet" href="../css/datatables.min.css">
   <link rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
     <div class="container-fluid">
-        <?php "nav-admin.php" ?>
-        <nav aria-label="breadcrumb">
+        <?php include "nav-admin.php" ?>
+        <nav aria-label="breadcrumb" class="mt-2">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.php">Inicio</a></li>
                 <li class="breadcrumb-item"><a href="./noticias.php">Noticias</a></li>
@@ -28,7 +29,8 @@
                 </div>
                 <div class="form-group">
                     <label for="">Contenido</label>
-                    <textarea name="contenido" class="form-control" rows="10" placeholder="Ingresa el contenido de la noticia" autofocus required></textarea>
+                    <!-- <textarea name="contenido" class="form-control" rows="10" placeholder="Ingresa el contenido de la noticia" autofocus required></textarea> -->
+                    <textarea name="contenido" rows="10"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="">Imagen de portada</label>
@@ -46,6 +48,7 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/datatables.min.js"></script>
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
     <script src="../js/app.js"></script>
 
 </body>

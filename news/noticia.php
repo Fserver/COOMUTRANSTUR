@@ -111,7 +111,7 @@ $noticia = $result->fetch_assoc();
             <hr>
             <div class="row d-flex align-items-center">
                 <div class="col-12 text-justify">
-                    <p><?=  $noticia["contenido"] ?></p>
+                    <?=  $noticia["contenido"] ?>
                 </div>
             </div>
         </div>

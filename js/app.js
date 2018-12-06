@@ -1,6 +1,7 @@
 $(function () {
 
   const host = "www.coomutranstur.com";
+  // const host = "localhost/fserver.github.io";
 
   jQuery(document).ready(function ($) {
     // site preloader -- also uncomment the div in the header and the css style for #preloader
@@ -103,19 +104,20 @@ $(function () {
       processData: false,
       dataType: "JSON",
       beforeSend: function () {
-        $('#sbmButton').attr("disabled", "disabled");
+        // $('#sbmButton').attr("disabled", "disabled");
         $('#form-editar-noticia').css("opacity", ".5");
       },
       success: function (response) {
         $('#form-editar-noticia').css("opacity", "");
-        $('#sbmButton').attr("disabled", false);
+        // $('#sbmButton').attr("disabled", false);
+
         if (response.rpta == true) {
           alert("Edición exitosa");
           location.href = "https://" + host + "/admin/noticias.php";
-        } else
-          if (response.rpta == false) {
-            alert("No se pudo editar");
-          }
+        }else
+        if (response.rpta == false) {
+          alert("No se pudo editar");
+        }else
         if (response.rpta === "err") {
           location.href = "https://" + host + "/autenticacion.php";
         }
@@ -285,6 +287,9 @@ $(function () {
   
      });
      /**FORMULARIO CONTACTO */
+
+     tinymce.init({ selector:'textarea' });
+
 
 }); //FIN READY
 

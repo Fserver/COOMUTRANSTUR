@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <?php "nav-admin.php" ?>
+        <?php include "nav-admin.php" ?>
         <div>
             <div class="row">
                 <div class="col-12">
